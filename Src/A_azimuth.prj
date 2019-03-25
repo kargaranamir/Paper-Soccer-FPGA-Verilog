@@ -1,0 +1,4 @@
+verilog work "Score.v"
+verilog work "comparator_min.v"
+verilog work "comparator.v"
+verilog work "A_azimuth.v"

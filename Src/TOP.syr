@@ -1,0 +1,1770 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.89 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.89 secs
+ 
+--> Reading design: TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Score.v" into library work
+Parsing module <Score>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\comparator_min.v" into library work
+Parsing module <comparator_min>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\comparator.v" into library work
+Parsing module <comparator>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" into library work
+Parsing module <mem_reader>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\FSM.v" into library work
+Parsing module <FSM>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" into library work
+Parsing module <A_azimuth>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\async_transmitter.v" into library work
+Parsing module <async_transmitter>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\async_receiver.v" into library work
+Parsing module <async_receiver>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\timer.v" into library work
+Parsing module <timer>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\single_ram.v" into library work
+Parsing module <ram_single>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v" into library work
+Parsing module <MP>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" into library work
+Parsing module <memory_handler>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\M1_UART.v" into library work
+Parsing module <M1_UART>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\interpreter.v" into library work
+Parsing module <Interpreter>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Handout.v" into library work
+Parsing module <Handout>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\fifo2transmit.v" into library work
+Parsing module <fifo2transmit>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\fifo.v" into library work
+Parsing module <fifo>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" into library work
+Parsing module <TOP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TOP>.
+
+Elaborating module <M1_UART>.
+
+Elaborating module <async_receiver>.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\async_receiver.v" Line 48: Result of 32-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\async_receiver.v" Line 109: Assignment to RxD_data_error ignored, since the identifier is never used
+
+Elaborating module <async_transmitter>.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\async_transmitter.v" Line 37: Result of 32-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 50: Assignment to RxD_endofpacket ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 51: Assignment to RxD_idle ignored, since the identifier is never used
+
+Elaborating module <Interpreter>.
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 68: Assignment to blue ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 69: Assignment to color_valid ignored, since the identifier is never used
+
+Elaborating module <Handout>.
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Handout.v" Line 102: Assignment to direction ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Handout.v" Line 126: Result of 8-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <memory_handler>.
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 53: Assignment to length ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 142: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 146: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 147: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 151: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 155: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 156: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 160: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 164: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 165: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 169: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 173: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 174: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 181: Result of 18-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <ram_single>.
+
+Elaborating module <MP>.
+
+Elaborating module <FSM>.
+
+Elaborating module <mem_reader>.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 94: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 95: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 103: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 109: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 110: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 118: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 124: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 125: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 133: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 139: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 140: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 148: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 154: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 155: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 163: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 169: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 170: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 178: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 184: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 185: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 193: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 199: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 200: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 208: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 214: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 215: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 223: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 229: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 230: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 238: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 244: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 245: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 253: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 259: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 260: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 268: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 274: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 275: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 283: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 289: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 290: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 298: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 304: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 305: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 313: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 319: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 320: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 328: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 334: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 335: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 343: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 349: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 350: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 358: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 364: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 365: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 373: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 379: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 380: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 388: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 394: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 395: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 403: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 409: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 410: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 418: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 424: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 425: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 433: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 439: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 440: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 448: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 454: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 455: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 514: Result of 18-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v" Line 163: Assignment to enable ignored, since the identifier is never used
+
+Elaborating module <A_azimuth>.
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 59: Assignment to color_o ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 325: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 329: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 330: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 334: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 339: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 340: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 345: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 349: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 350: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 354: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 359: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 360: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 448: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 453: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 454: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 458: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 463: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 464: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 469: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 473: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 474: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 478: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 483: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 484: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <Score>.
+WARNING:HDLCompiler:872 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Score.v" Line 80: Using initial value of x_score since it is never assigned
+
+Elaborating module <comparator>.
+
+Elaborating module <comparator_min>.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 657: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 658: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:634 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v" Line 133: Net <data_valid> does not have a driver.
+
+Elaborating module <fifo>.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\fifo.v" Line 40: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\fifo.v" Line 43: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\fifo.v" Line 82: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\fifo.v" Line 85: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 168: Assignment to buf_full ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 169: Size mismatch in connection of port <fifo_counter>. Formal port size is 4-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 169: Assignment to fifo_counter ignored, since the identifier is never used
+
+Elaborating module <fifo2transmit>.
+
+Elaborating module <timer>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TOP>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v".
+INFO:Xst:3210 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" line 40: Output port <RxD_endofpacket> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" line 40: Output port <RxD_idle> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" line 58: Output port <blue> of the instance <I1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" line 58: Output port <color_valid> of the instance <I1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" line 160: Output port <fifo_counter> of the instance <ff1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" line 160: Output port <buf_full> of the instance <ff1> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <TOP> synthesized.
+
+Synthesizing Unit <M1_UART>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\M1_UART.v".
+    Summary:
+	no macro.
+Unit <M1_UART> synthesized.
+
+Synthesizing Unit <async_receiver>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\async_receiver.v".
+        ClkFrequency = 24000000
+        Baud_0 = 1200
+        Baud_1 = 9600
+        Baud_2 = 38400
+        Baud_3 = 115200
+        Baud8_0 = 9600
+        Baud8_1 = 76800
+        Baud8_2 = 307200
+        Baud8_3 = 921600
+        Baud8GeneratorAccWidth = 16
+        Baud8GeneratorInc_0 = 26
+        Baud8GeneratorInc_1 = 210
+        Baud8GeneratorInc_2 = 839
+        Baud8GeneratorInc_3 = 2517
+    Found 2-bit register for signal <RxD_sync_inv>.
+    Found 2-bit register for signal <RxD_cnt_inv>.
+    Found 1-bit register for signal <RxD_bit_inv>.
+    Found 4-bit register for signal <bit_spacing>.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <RxD_data>.
+    Found 1-bit register for signal <RxD_data_ready>.
+    Found 5-bit register for signal <gap_count>.
+    Found 1-bit register for signal <RxD_endofpacket>.
+    Found 17-bit register for signal <Baud8GeneratorAcc>.
+    Found 2-bit subtractor for signal <RxD_cnt_inv[1]_GND_3_o_sub_17_OUT> created at line 68.
+    Found 17-bit adder for signal <GND_3_o_Baud8GeneratorInc[16]_add_7_OUT> created at line 53.
+    Found 2-bit adder for signal <RxD_cnt_inv[1]_GND_3_o_add_14_OUT> created at line 66.
+    Found 4-bit adder for signal <n0115> created at line 86.
+    Found 5-bit adder for signal <gap_count[4]_GND_3_o_add_54_OUT> created at line 119.
+    Found 4-bit 12-to-1 multiplexer for signal <state[3]_state[3]_wide_mux_42_OUT> created at line 91.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <state> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+Unit <async_receiver> synthesized.
+
+Synthesizing Unit <async_transmitter>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\async_transmitter.v".
+        ClkFrequency = 24000000
+        Baud_0 = 1200
+        Baud_1 = 9600
+        Baud_2 = 38400
+        Baud_3 = 115200
+        RegisterInputData = 1
+        BaudGeneratorAccWidth = 16
+        BaudGeneratorInc_0 = 3
+        BaudGeneratorInc_1 = 26
+        BaudGeneratorInc_2 = 105
+        BaudGeneratorInc_3 = 315
+    Found 8-bit register for signal <TxD_dataReg>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <TxD>.
+    Found 17-bit register for signal <BaudGeneratorAcc>.
+    Found 17-bit adder for signal <GND_4_o_BaudGeneratorInc[16]_add_7_OUT> created at line 43.
+    Found 4-bit 14-to-1 multiplexer for signal <state[3]_GND_4_o_mux_30_OUT> created at line 61.
+    Found 1-bit 8-to-1 multiplexer for signal <muxbit> created at line 79.
+    Found 4-bit comparator greater for signal <state[3]_GND_4_o_LessThan_35_o> created at line 92
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <state> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <async_transmitter> synthesized.
+
+Synthesizing Unit <Interpreter>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\interpreter.v".
+    Found 8-bit register for signal <width>.
+    Found 1-bit register for signal <width_valid>.
+    Found 8-bit register for signal <length>.
+    Found 1-bit register for signal <length_valid>.
+    Found 1-bit register for signal <red>.
+    Found 1-bit register for signal <blue>.
+    Found 1-bit register for signal <color_valid>.
+    Found 1-bit register for signal <opponent_game_start>.
+    Found 1-bit register for signal <new_en_mov>.
+    Found 1-bit register for signal <me_game_start>.
+    Found 8-bit register for signal <RxD_data_Opponent>.
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 14                                             |
+    | Transitions        | 27                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <Interpreter> synthesized.
+
+Synthesizing Unit <Handout>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Handout.v".
+    Found 1-bit register for signal <my_move>.
+    Found 1-bit register for signal <direction_valid_out>.
+    Found 3-bit register for signal <direction_out>.
+    Found 1-bit register for signal <start>.
+    Found 1-bit register for signal <timer_rst>.
+    Found 1-bit register for signal <wr_en>.
+    Found 8-bit register for signal <buf_in>.
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_5> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 19                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit adder for signal <n0103[6:0]> created at line 163.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Handout> synthesized.
+
+Synthesizing Unit <memory_handler>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v".
+WARNING:Xst:647 - Input <length_in<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <width>.
+    Found 3-bit register for signal <direction>.
+    Found 8-bit register for signal <current_x>.
+    Found 8-bit register for signal <current_y>.
+    Found 1-bit register for signal <second_point>.
+    Found 1-bit register for signal <we>.
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_6> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <current_y[7]_GND_7_o_add_42_OUT> created at line 142.
+    Found 8-bit adder for signal <current_x[7]_GND_7_o_add_46_OUT> created at line 147.
+    Found 9-bit adder for signal <n0199> created at line 181.
+    Found 17-bit adder for signal <n0117> created at line 181.
+    Found 8-bit subtractor for signal <GND_7_o_GND_7_o_sub_55_OUT<7:0>> created at line 156.
+    Found 8-bit subtractor for signal <GND_7_o_GND_7_o_sub_62_OUT<7:0>> created at line 164.
+    Found 9x8-bit multiplier for signal <n0220> created at line 181.
+    Found 8-bit 4-to-1 multiplexer for signal <_n0454> created at line 240.
+    Found 8-bit 4-to-1 multiplexer for signal <_n0456> created at line 240.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred  27 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <memory_handler> synthesized.
+
+Synthesizing Unit <ram_single>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\single_ram.v".
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem>, simulation mismatch.
+    Found 65026x8-bit single-port RAM <Mram_mem> for signal <mem>.
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ram_single> synthesized.
+
+Synthesizing Unit <MP>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v".
+INFO:Xst:3210 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v" line 127: Output port <enable> of the instance <M1> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <data_valid> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	inferred  72 Multiplexer(s).
+Unit <MP> synthesized.
+
+Synthesizing Unit <FSM>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\FSM.v".
+WARNING:Xst:647 - Input <finish_valid_a> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <current_x>.
+    Found 8-bit register for signal <current_y>.
+    Found 1-bit register for signal <color>.
+    Found 8-bit register for signal <width>.
+    Found 8-bit register for signal <length>.
+    Found 1-bit register for signal <start_mem_reader>.
+    Found 1-bit register for signal <start_a>.
+    Found 8-bit register for signal <bestvala>.
+    Found 1-bit register for signal <my_movea>.
+    Found 1-bit register for signal <no_perm_a_r>.
+    Found 8-bit register for signal <bestvalb>.
+    Found 1-bit register for signal <my_moveb>.
+    Found 1-bit register for signal <no_perm_b_r>.
+    Found 8-bit register for signal <bestvalc>.
+    Found 1-bit register for signal <my_movec>.
+    Found 1-bit register for signal <no_perm_c_r>.
+    Found 8-bit register for signal <bestvald>.
+    Found 1-bit register for signal <my_moved>.
+    Found 1-bit register for signal <no_perm_d_r>.
+    Found 8-bit register for signal <bestvale>.
+    Found 1-bit register for signal <my_movee>.
+    Found 1-bit register for signal <no_perm_e_r>.
+    Found 8-bit register for signal <bestvalf>.
+    Found 1-bit register for signal <my_movef>.
+    Found 1-bit register for signal <no_perm_f_r>.
+    Found 8-bit register for signal <bestvalg>.
+    Found 1-bit register for signal <my_moveg>.
+    Found 1-bit register for signal <no_perm_g_r>.
+    Found 8-bit register for signal <bestvalh>.
+    Found 1-bit register for signal <my_moveh>.
+    Found 1-bit register for signal <no_perm_h_r>.
+    Found 1-bit register for signal <my_move>.
+    Found 3-bit register for signal <direction>.
+    Found 5-bit register for signal <state>.
+    Found 8-bit subtractor for signal <GND_19_o_GND_19_o_sub_149_OUT> created at line 325.
+    Found 8-bit adder for signal <_n0538> created at line 320.
+    Found 8-bit comparator equal for signal <current_y[7]_length[7]_equal_141_o> created at line 315
+    Found 32-bit comparator equal for signal <GND_19_o_GND_19_o_equal_150_o> created at line 325
+    Found 8-bit comparator lessequal for signal <n0186> created at line 340
+    Found 8-bit comparator lessequal for signal <n0188> created at line 340
+    Found 8-bit comparator lessequal for signal <n0191> created at line 340
+    Found 8-bit comparator lessequal for signal <n0194> created at line 340
+    Found 8-bit comparator lessequal for signal <n0197> created at line 340
+    Found 8-bit comparator lessequal for signal <n0200> created at line 340
+    Found 8-bit comparator lessequal for signal <n0203> created at line 340
+    Found 8-bit comparator lessequal for signal <n0208> created at line 345
+    Found 8-bit comparator lessequal for signal <n0210> created at line 345
+    Found 8-bit comparator lessequal for signal <n0213> created at line 345
+    Found 8-bit comparator lessequal for signal <n0216> created at line 345
+    Found 8-bit comparator lessequal for signal <n0219> created at line 345
+    Found 8-bit comparator lessequal for signal <n0222> created at line 345
+    Found 8-bit comparator lessequal for signal <n0225> created at line 345
+    Found 8-bit comparator lessequal for signal <n0230> created at line 350
+    Found 8-bit comparator lessequal for signal <n0232> created at line 350
+    Found 8-bit comparator lessequal for signal <n0235> created at line 350
+    Found 8-bit comparator lessequal for signal <n0238> created at line 350
+    Found 8-bit comparator lessequal for signal <n0241> created at line 350
+    Found 8-bit comparator lessequal for signal <n0244> created at line 350
+    Found 8-bit comparator lessequal for signal <n0247> created at line 350
+    Found 8-bit comparator lessequal for signal <n0252> created at line 355
+    Found 8-bit comparator lessequal for signal <n0254> created at line 355
+    Found 8-bit comparator lessequal for signal <n0257> created at line 355
+    Found 8-bit comparator lessequal for signal <n0260> created at line 355
+    Found 8-bit comparator lessequal for signal <n0263> created at line 355
+    Found 8-bit comparator lessequal for signal <n0266> created at line 355
+    Found 8-bit comparator lessequal for signal <n0269> created at line 355
+    Found 8-bit comparator lessequal for signal <n0273> created at line 360
+    Found 8-bit comparator lessequal for signal <n0275> created at line 360
+    Found 8-bit comparator lessequal for signal <n0278> created at line 360
+    Found 8-bit comparator lessequal for signal <n0281> created at line 360
+    Found 8-bit comparator lessequal for signal <n0284> created at line 360
+    Found 8-bit comparator lessequal for signal <n0287> created at line 360
+    Found 8-bit comparator lessequal for signal <n0290> created at line 360
+    Found 8-bit comparator lessequal for signal <n0295> created at line 365
+    Found 8-bit comparator lessequal for signal <n0297> created at line 365
+    Found 8-bit comparator lessequal for signal <n0300> created at line 365
+    Found 8-bit comparator lessequal for signal <n0303> created at line 365
+    Found 8-bit comparator lessequal for signal <n0306> created at line 365
+    Found 8-bit comparator lessequal for signal <n0309> created at line 365
+    Found 8-bit comparator lessequal for signal <n0312> created at line 365
+    Found 8-bit comparator lessequal for signal <n0317> created at line 370
+    Found 8-bit comparator lessequal for signal <n0319> created at line 370
+    Found 8-bit comparator lessequal for signal <n0322> created at line 370
+    Found 8-bit comparator lessequal for signal <n0325> created at line 370
+    Found 8-bit comparator lessequal for signal <n0328> created at line 370
+    Found 8-bit comparator lessequal for signal <n0331> created at line 370
+    Found 8-bit comparator lessequal for signal <n0334> created at line 370
+    Found 8-bit comparator lessequal for signal <n0339> created at line 375
+    Found 8-bit comparator lessequal for signal <n0341> created at line 375
+    Found 8-bit comparator lessequal for signal <n0344> created at line 375
+    Found 8-bit comparator lessequal for signal <n0347> created at line 375
+    Found 8-bit comparator lessequal for signal <n0350> created at line 375
+    Found 8-bit comparator lessequal for signal <n0353> created at line 375
+    Found 8-bit comparator lessequal for signal <n0356> created at line 375
+    Found 8-bit comparator equal for signal <GND_19_o_GND_19_o_equal_145_o> created at line 320
+    Found 8-bit comparator equal for signal <GND_19_o_GND_19_o_equal_154_o> created at line 330
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 124 D-type flip-flop(s).
+	inferred  60 Comparator(s).
+	inferred  51 Multiplexer(s).
+Unit <FSM> synthesized.
+
+Synthesizing Unit <mem_reader>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v".
+WARNING:Xst:647 - Input <data_valid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 9-bit register for signal <current_y_reg>.
+    Found 8-bit register for signal <counter>.
+    Found 25-bit register for signal <status>.
+    Found 1-bit register for signal <enable>.
+    Found 8-bit register for signal <x_reg>.
+    Found 8-bit register for signal <y_reg>.
+    Found 1-bit register for signal <finish_point>.
+    Found 5-bit register for signal <state>.
+    Found 200-bit register for signal <n0519[199:0]>.
+    Found 9-bit register for signal <current_x_reg>.
+    Found finite state machine <FSM_7> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00011                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit subtractor for signal <current_x_reg[8]_GND_20_o_sub_14_OUT> created at line 92.
+    Found 10-bit subtractor for signal <current_x_reg[8]_GND_20_o_sub_30_OUT> created at line 107.
+    Found 10-bit subtractor for signal <current_y_reg[8]_GND_20_o_sub_240_OUT> created at line 317.
+    Found 10-bit subtractor for signal <current_y_reg[8]_GND_20_o_sub_318_OUT> created at line 392.
+    Found 9-bit subtractor for signal <GND_20_o_GND_20_o_sub_452_OUT> created at line 533.
+    Found 10-bit adder for signal <n0819> created at line 92.
+    Found 10-bit adder for signal <n0536> created at line 95.
+    Found 8-bit adder for signal <counter[7]_GND_20_o_add_23_OUT> created at line 103.
+    Found 10-bit adder for signal <n0830> created at line 137.
+    Found 10-bit adder for signal <n0564> created at line 139.
+    Found 10-bit adder for signal <n0834> created at line 152.
+    Found 10-bit adder for signal <n0574> created at line 154.
+    Found 10-bit adder for signal <n0838> created at line 167.
+    Found 10-bit adder for signal <n0584> created at line 170.
+    Found 9-bit adder for signal <n0869> created at line 514.
+    Found 17-bit adder for signal <n0518> created at line 514.
+    Found 9x8-bit multiplier for signal <n0897> created at line 514.
+    Found 1-bit 28-to-1 multiplexer for signal <_n1086> created at line 450.
+    Found 32-bit comparator lessequal for signal <n0014> created at line 92
+    Found 10-bit comparator lessequal for signal <n0017> created at line 92
+    Found 32-bit comparator lessequal for signal <n0033> created at line 107
+    Found 32-bit comparator lessequal for signal <n0046> created at line 122
+    Found 10-bit comparator lessequal for signal <n0060> created at line 137
+    Found 10-bit comparator lessequal for signal <n0075> created at line 152
+    Found 10-bit comparator lessequal for signal <n0090> created at line 167
+    Found 9-bit comparator lessequal for signal <n0148> created at line 242
+    Found 32-bit comparator lessequal for signal <n0206> created at line 317
+    Found 32-bit comparator lessequal for signal <n0264> created at line 392
+    Found 8-bit comparator lessequal for signal <n0351> created at line 529
+    Found 32-bit comparator lessequal for signal <n0405> created at line 533
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred  16 Adder/Subtractor(s).
+	inferred 269 D-type flip-flop(s).
+	inferred  12 Comparator(s).
+	inferred 214 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <mem_reader> synthesized.
+
+Synthesizing Unit <A_azimuth>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v".
+WARNING:Xst:647 - Input <data_out7> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <no_perm_valid>.
+    Found 5-bit register for signal <state>.
+    Found 8-bit register for signal <nloc_x>.
+    Found 8-bit register for signal <nloc_y>.
+    Found 8-bit register for signal <anloc_x>.
+    Found 8-bit register for signal <anloc_y>.
+    Found 8-bit register for signal <bnloc_x>.
+    Found 8-bit register for signal <bnloc_y>.
+    Found 8-bit register for signal <cnloc_x>.
+    Found 8-bit register for signal <cnloc_y>.
+    Found 8-bit register for signal <dnloc_x>.
+    Found 8-bit register for signal <dnloc_y>.
+    Found 8-bit register for signal <enloc_x>.
+    Found 8-bit register for signal <enloc_y>.
+    Found 8-bit register for signal <fnloc_x>.
+    Found 8-bit register for signal <fnloc_y>.
+    Found 8-bit register for signal <gnloc_x>.
+    Found 8-bit register for signal <gnloc_y>.
+    Found 8-bit register for signal <hnloc_x>.
+    Found 8-bit register for signal <hnloc_y>.
+    Found 1-bit register for signal <no_perm>.
+    Found finite state machine <FSM_8> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit subtractor for signal <GND_21_o_GND_21_o_sub_110_OUT> created at line 228.
+    Found 9-bit subtractor for signal <GND_21_o_GND_21_o_sub_133_OUT> created at line 244.
+    Found 9-bit subtractor for signal <GND_21_o_GND_21_o_sub_342_OUT> created at line 414.
+    Found 9-bit subtractor for signal <GND_21_o_GND_21_o_sub_363_OUT> created at line 422.
+    Found 2-bit adder for signal <n0873[1:0]> created at line 209.
+    Found 3-bit adder for signal <n0876[2:0]> created at line 209.
+    Found 2-bit adder for signal <n0894[1:0]> created at line 373.
+    Found 3-bit adder for signal <n0897[2:0]> created at line 373.
+    Found 4-bit adder for signal <n0900[3:0]> created at line 373.
+    Found 5-bit adder for signal <n0903[4:0]> created at line 373.
+    Found 6-bit adder for signal <n0906[5:0]> created at line 373.
+    Found 7-bit adder for signal <n0909[6:0]> created at line 373.
+    Found 8-bit adder for signal <_n1231> created at line 373.
+    Found 2-bit adder for signal <n0915[1:0]> created at line 374.
+    Found 3-bit adder for signal <n0918[2:0]> created at line 374.
+    Found 4-bit adder for signal <n0921[3:0]> created at line 374.
+    Found 5-bit adder for signal <n0924[4:0]> created at line 374.
+    Found 6-bit adder for signal <n0927[5:0]> created at line 374.
+    Found 7-bit adder for signal <n0930[6:0]> created at line 374.
+    Found 8-bit adder for signal <_n1234> created at line 374.
+    Found 2-bit adder for signal <n0936[1:0]> created at line 375.
+    Found 3-bit adder for signal <n0939[2:0]> created at line 375.
+    Found 4-bit adder for signal <n0942[3:0]> created at line 375.
+    Found 5-bit adder for signal <n0945[4:0]> created at line 375.
+    Found 6-bit adder for signal <n0948[5:0]> created at line 375.
+    Found 7-bit adder for signal <n0951[6:0]> created at line 375.
+    Found 8-bit adder for signal <_n1240> created at line 375.
+    Found 2-bit adder for signal <n0957[1:0]> created at line 376.
+    Found 3-bit adder for signal <n0960[2:0]> created at line 376.
+    Found 4-bit adder for signal <n0963[3:0]> created at line 376.
+    Found 5-bit adder for signal <n0966[4:0]> created at line 376.
+    Found 6-bit adder for signal <n0969[5:0]> created at line 376.
+    Found 7-bit adder for signal <n0972[6:0]> created at line 376.
+    Found 8-bit adder for signal <_n1246> created at line 376.
+    Found 2-bit adder for signal <n0978[1:0]> created at line 377.
+    Found 3-bit adder for signal <n0981[2:0]> created at line 377.
+    Found 4-bit adder for signal <n0984[3:0]> created at line 377.
+    Found 5-bit adder for signal <n0987[4:0]> created at line 377.
+    Found 6-bit adder for signal <n0990[5:0]> created at line 377.
+    Found 7-bit adder for signal <n0993[6:0]> created at line 377.
+    Found 8-bit adder for signal <_n1225> created at line 377.
+    Found 2-bit adder for signal <n0999[1:0]> created at line 378.
+    Found 3-bit adder for signal <n1002[2:0]> created at line 378.
+    Found 4-bit adder for signal <n1005[3:0]> created at line 378.
+    Found 5-bit adder for signal <n1008[4:0]> created at line 378.
+    Found 6-bit adder for signal <n1011[5:0]> created at line 378.
+    Found 7-bit adder for signal <n1014[6:0]> created at line 378.
+    Found 8-bit adder for signal <_n1243> created at line 378.
+    Found 2-bit adder for signal <n1020[1:0]> created at line 379.
+    Found 3-bit adder for signal <n1023[2:0]> created at line 379.
+    Found 4-bit adder for signal <n1026[3:0]> created at line 379.
+    Found 5-bit adder for signal <n1029[4:0]> created at line 379.
+    Found 6-bit adder for signal <n1032[5:0]> created at line 379.
+    Found 7-bit adder for signal <n1035[6:0]> created at line 379.
+    Found 8-bit adder for signal <_n1237> created at line 379.
+    Found 2-bit adder for signal <n1041[1:0]> created at line 380.
+    Found 3-bit adder for signal <n1044[2:0]> created at line 380.
+    Found 4-bit adder for signal <n1047[3:0]> created at line 380.
+    Found 5-bit adder for signal <n1050[4:0]> created at line 380.
+    Found 6-bit adder for signal <n1053[5:0]> created at line 380.
+    Found 7-bit adder for signal <n1056[6:0]> created at line 380.
+    Found 8-bit adder for signal <_n1228> created at line 380.
+    Found 9-bit adder for signal <_n1135> created at line 406.
+    Found 9-bit adder for signal <_n1144> created at line 422.
+    Found 8-bit adder for signal <nloc_y[7]_GND_21_o_add_378_OUT> created at line 448.
+    Found 8-bit adder for signal <nloc_x[7]_GND_21_o_add_382_OUT> created at line 453.
+    Found 9-bit adder for signal <n0697> created at line 657.
+    Found 9-bit adder for signal <n0698> created at line 658.
+    Found 8-bit subtractor for signal <GND_21_o_GND_21_o_sub_393_OUT<7:0>> created at line 464.
+    Found 8-bit subtractor for signal <GND_21_o_GND_21_o_sub_401_OUT<7:0>> created at line 473.
+    Found 4-bit adder for signal <_n1698> created at line 208.
+    Found 4-bit adder for signal <_n1699> created at line 208.
+    Found 4-bit adder for signal <_n1700> created at line 208.
+    Found 4-bit adder for signal <_n1701> created at line 208.
+    Found 4-bit adder for signal <line_number> created at line 208.
+    Found 1-bit 25-to-1 multiplexer for signal <desired_point_number[4]_X_20_o_Mux_128_o> created at line 244.
+    Found 1-bit 8-to-1 multiplexer for signal <desired_direction_number[2]_data_out12[7]_Mux_129_o> created at line 244.
+    Found 1-bit 25-to-1 multiplexer for signal <a[4]_X_20_o_Mux_253_o> created at line 381.
+    Found 1-bit 25-to-1 multiplexer for signal <b[4]_X_20_o_Mux_257_o> created at line 382.
+    Found 1-bit 25-to-1 multiplexer for signal <c[4]_X_20_o_Mux_259_o> created at line 383.
+    Found 1-bit 25-to-1 multiplexer for signal <d[4]_X_20_o_Mux_264_o> created at line 384.
+    Found 1-bit 25-to-1 multiplexer for signal <e[4]_X_20_o_Mux_266_o> created at line 385.
+    Found 1-bit 25-to-1 multiplexer for signal <f[4]_X_20_o_Mux_269_o> created at line 386.
+    Found 1-bit 25-to-1 multiplexer for signal <g[4]_X_20_o_Mux_271_o> created at line 387.
+    Found 1-bit 25-to-1 multiplexer for signal <h[4]_X_20_o_Mux_276_o> created at line 388.
+    Found 32-bit comparator equal for signal <GND_21_o_GND_21_o_equal_111_o> created at line 228
+    Found 32-bit comparator equal for signal <GND_21_o_GND_21_o_equal_134_o> created at line 244
+    Found 8-bit comparator not equal for signal <nloc_x[7]_width[7]_equal_256_o> created at line 381
+    Found 8-bit comparator not equal for signal <nloc_y[7]_length[7]_equal_262_o> created at line 383
+    Found 8-bit comparator equal for signal <current_x[7]_width[7]_equal_329_o> created at line 410
+    Found 32-bit comparator equal for signal <GND_21_o_GND_21_o_equal_347_o> created at line 414
+    Found 32-bit comparator equal for signal <GND_21_o_GND_21_o_equal_351_o> created at line 414
+    Found 8-bit comparator equal for signal <current_y[7]_length[7]_equal_359_o> created at line 418
+    Found 32-bit comparator equal for signal <GND_21_o_GND_21_o_equal_366_o> created at line 422
+    Found 32-bit comparator not equal for signal <n0387> created at line 422
+    Found 8-bit comparator not equal for signal <n0349> created at line 0
+    Found 8-bit comparator equal for signal <GND_21_o_GND_21_o_equal_362_o> created at line 418
+    Found 9-bit comparator equal for signal <GND_21_o_GND_21_o_equal_317_o> created at line 406
+    Found 9-bit comparator not equal for signal <n0338> created at line 0
+    Found 9-bit comparator equal for signal <GND_21_o_GND_21_o_equal_372_o> created at line 422
+    Found 9-bit comparator equal for signal <GND_21_o_GND_21_o_equal_376_o> created at line 422
+    Found 8-bit comparator not equal for signal <GND_21_o_GND_21_o_equal_264_o> created at line 383
+    Summary:
+	inferred  75 Adder/Subtractor(s).
+	inferred 146 D-type flip-flop(s).
+	inferred  17 Comparator(s).
+	inferred 337 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <A_azimuth> synthesized.
+
+Synthesizing Unit <Score>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Score.v".
+WARNING:Xst:647 - Input <old_x> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <new_x> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <length> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <width> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 9-bit subtractor for signal <y_diff1> created at line 39.
+    Found 9-bit subtractor for signal <y_diff2> created at line 40.
+    Found 2-bit adder for signal <n0084[1:0]> created at line 106.
+    Found 3-bit adder for signal <n0087[2:0]> created at line 106.
+    Found 8-bit adder for signal <y_score[7]_GND_22_o_add_35_OUT> created at line 129.
+    Found 4-bit adder for signal <_n0132> created at line 106.
+    Found 4-bit adder for signal <_n0133> created at line 106.
+    Found 4-bit adder for signal <_n0134> created at line 106.
+    Found 4-bit adder for signal <_n0135> created at line 106.
+    Found 4-bit adder for signal <line_number> created at line 106.
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred   5 Multiplexer(s).
+Unit <Score> synthesized.
+
+Synthesizing Unit <comparator>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\comparator.v".
+    Found 8-bit comparator lessequal for signal <n0000> created at line 16
+    Found 8-bit comparator lessequal for signal <n0002> created at line 16
+    Found 8-bit comparator lessequal for signal <n0005> created at line 16
+    Found 8-bit comparator lessequal for signal <n0008> created at line 16
+    Found 8-bit comparator lessequal for signal <n0011> created at line 16
+    Found 8-bit comparator lessequal for signal <n0014> created at line 16
+    Found 8-bit comparator lessequal for signal <n0017> created at line 16
+    Found 8-bit comparator lessequal for signal <n0020> created at line 20
+    Found 8-bit comparator lessequal for signal <n0022> created at line 20
+    Found 8-bit comparator lessequal for signal <n0025> created at line 20
+    Found 8-bit comparator lessequal for signal <n0028> created at line 20
+    Found 8-bit comparator lessequal for signal <n0031> created at line 20
+    Found 8-bit comparator lessequal for signal <n0034> created at line 20
+    Found 8-bit comparator lessequal for signal <n0037> created at line 20
+    Found 8-bit comparator lessequal for signal <n0040> created at line 24
+    Found 8-bit comparator lessequal for signal <n0042> created at line 24
+    Found 8-bit comparator lessequal for signal <n0045> created at line 24
+    Found 8-bit comparator lessequal for signal <n0048> created at line 24
+    Found 8-bit comparator lessequal for signal <n0051> created at line 24
+    Found 8-bit comparator lessequal for signal <n0054> created at line 24
+    Found 8-bit comparator lessequal for signal <n0057> created at line 24
+    Found 8-bit comparator lessequal for signal <n0060> created at line 28
+    Found 8-bit comparator lessequal for signal <n0062> created at line 28
+    Found 8-bit comparator lessequal for signal <n0065> created at line 28
+    Found 8-bit comparator lessequal for signal <n0068> created at line 28
+    Found 8-bit comparator lessequal for signal <n0071> created at line 28
+    Found 8-bit comparator lessequal for signal <n0074> created at line 28
+    Found 8-bit comparator lessequal for signal <n0077> created at line 28
+    Found 8-bit comparator lessequal for signal <n0080> created at line 32
+    Found 8-bit comparator lessequal for signal <n0082> created at line 32
+    Found 8-bit comparator lessequal for signal <n0085> created at line 32
+    Found 8-bit comparator lessequal for signal <n0088> created at line 32
+    Found 8-bit comparator lessequal for signal <n0091> created at line 32
+    Found 8-bit comparator lessequal for signal <n0094> created at line 32
+    Found 8-bit comparator lessequal for signal <n0097> created at line 32
+    Found 8-bit comparator lessequal for signal <n0100> created at line 36
+    Found 8-bit comparator lessequal for signal <n0102> created at line 36
+    Found 8-bit comparator lessequal for signal <n0105> created at line 36
+    Found 8-bit comparator lessequal for signal <n0108> created at line 36
+    Found 8-bit comparator lessequal for signal <n0111> created at line 36
+    Found 8-bit comparator lessequal for signal <n0114> created at line 36
+    Found 8-bit comparator lessequal for signal <n0117> created at line 36
+    Found 8-bit comparator lessequal for signal <n0120> created at line 40
+    Found 8-bit comparator lessequal for signal <n0122> created at line 40
+    Found 8-bit comparator lessequal for signal <n0125> created at line 40
+    Found 8-bit comparator lessequal for signal <n0128> created at line 40
+    Found 8-bit comparator lessequal for signal <n0131> created at line 40
+    Found 8-bit comparator lessequal for signal <n0134> created at line 40
+    Found 8-bit comparator lessequal for signal <n0137> created at line 40
+    Found 8-bit comparator lessequal for signal <n0140> created at line 44
+    Found 8-bit comparator lessequal for signal <n0142> created at line 44
+    Found 8-bit comparator lessequal for signal <n0145> created at line 44
+    Found 8-bit comparator lessequal for signal <n0148> created at line 44
+    Found 8-bit comparator lessequal for signal <n0151> created at line 44
+    Found 8-bit comparator lessequal for signal <n0154> created at line 44
+    Found 8-bit comparator lessequal for signal <n0157> created at line 44
+    Summary:
+	inferred  56 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <comparator> synthesized.
+
+Synthesizing Unit <comparator_min>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\comparator_min.v".
+    Found 8-bit comparator lessequal for signal <n0000> created at line 16
+    Found 8-bit comparator lessequal for signal <n0002> created at line 16
+    Found 8-bit comparator lessequal for signal <n0005> created at line 16
+    Found 8-bit comparator lessequal for signal <n0008> created at line 16
+    Found 8-bit comparator lessequal for signal <n0011> created at line 16
+    Found 8-bit comparator lessequal for signal <n0014> created at line 16
+    Found 8-bit comparator lessequal for signal <n0017> created at line 16
+    Found 8-bit comparator lessequal for signal <n0020> created at line 20
+    Found 8-bit comparator lessequal for signal <n0022> created at line 20
+    Found 8-bit comparator lessequal for signal <n0025> created at line 20
+    Found 8-bit comparator lessequal for signal <n0028> created at line 20
+    Found 8-bit comparator lessequal for signal <n0031> created at line 20
+    Found 8-bit comparator lessequal for signal <n0034> created at line 20
+    Found 8-bit comparator lessequal for signal <n0037> created at line 20
+    Found 8-bit comparator lessequal for signal <n0040> created at line 24
+    Found 8-bit comparator lessequal for signal <n0042> created at line 24
+    Found 8-bit comparator lessequal for signal <n0045> created at line 24
+    Found 8-bit comparator lessequal for signal <n0048> created at line 24
+    Found 8-bit comparator lessequal for signal <n0051> created at line 24
+    Found 8-bit comparator lessequal for signal <n0054> created at line 24
+    Found 8-bit comparator lessequal for signal <n0057> created at line 24
+    Found 8-bit comparator lessequal for signal <n0060> created at line 28
+    Found 8-bit comparator lessequal for signal <n0062> created at line 28
+    Found 8-bit comparator lessequal for signal <n0065> created at line 28
+    Found 8-bit comparator lessequal for signal <n0068> created at line 28
+    Found 8-bit comparator lessequal for signal <n0071> created at line 28
+    Found 8-bit comparator lessequal for signal <n0074> created at line 28
+    Found 8-bit comparator lessequal for signal <n0077> created at line 28
+    Found 8-bit comparator lessequal for signal <n0080> created at line 32
+    Found 8-bit comparator lessequal for signal <n0082> created at line 32
+    Found 8-bit comparator lessequal for signal <n0085> created at line 32
+    Found 8-bit comparator lessequal for signal <n0088> created at line 32
+    Found 8-bit comparator lessequal for signal <n0091> created at line 32
+    Found 8-bit comparator lessequal for signal <n0094> created at line 32
+    Found 8-bit comparator lessequal for signal <n0097> created at line 32
+    Found 8-bit comparator lessequal for signal <n0100> created at line 36
+    Found 8-bit comparator lessequal for signal <n0102> created at line 36
+    Found 8-bit comparator lessequal for signal <n0105> created at line 36
+    Found 8-bit comparator lessequal for signal <n0108> created at line 36
+    Found 8-bit comparator lessequal for signal <n0111> created at line 36
+    Found 8-bit comparator lessequal for signal <n0114> created at line 36
+    Found 8-bit comparator lessequal for signal <n0117> created at line 36
+    Found 8-bit comparator lessequal for signal <n0120> created at line 40
+    Found 8-bit comparator lessequal for signal <n0122> created at line 40
+    Found 8-bit comparator lessequal for signal <n0125> created at line 40
+    Found 8-bit comparator lessequal for signal <n0128> created at line 40
+    Found 8-bit comparator lessequal for signal <n0131> created at line 40
+    Found 8-bit comparator lessequal for signal <n0134> created at line 40
+    Found 8-bit comparator lessequal for signal <n0137> created at line 40
+    Found 8-bit comparator lessequal for signal <n0140> created at line 44
+    Found 8-bit comparator lessequal for signal <n0142> created at line 44
+    Found 8-bit comparator lessequal for signal <n0145> created at line 44
+    Found 8-bit comparator lessequal for signal <n0148> created at line 44
+    Found 8-bit comparator lessequal for signal <n0151> created at line 44
+    Found 8-bit comparator lessequal for signal <n0154> created at line 44
+    Summary:
+	inferred  55 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <comparator_min> synthesized.
+
+Synthesizing Unit <fifo>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\fifo.v".
+    Found 8-bit register for signal <buf_out>.
+    Found 3-bit register for signal <wr_ptr>.
+    Found 3-bit register for signal <rd_ptr>.
+    Found 4-bit register for signal <fifo_counter>.
+    Found 4-bit adder for signal <fifo_counter[3]_GND_33_o_add_2_OUT> created at line 40.
+    Found 3-bit adder for signal <wr_ptr[2]_GND_33_o_add_15_OUT> created at line 82.
+    Found 3-bit adder for signal <rd_ptr[2]_GND_33_o_add_17_OUT> created at line 85.
+    Found 4-bit subtractor for signal <GND_33_o_GND_33_o_sub_4_OUT<3:0>> created at line 43.
+    Found 8x8-bit dual-port RAM <Mram_buf_mem> for signal <buf_mem>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <fifo> synthesized.
+
+Synthesizing Unit <fifo2transmit>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\fifo2transmit.v".
+    Found 2-bit register for signal <state>.
+    Found finite state machine <FSM_9> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <fifo2transmit> synthesized.
+
+Synthesizing Unit <timer>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\timer.v".
+    Found 32-bit register for signal <counter>.
+    Found 2-bit register for signal <state>.
+    Found finite state machine <FSM_10> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | timer_rst (positive)                           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <counter[31]_GND_35_o_add_13_OUT> created at line 56.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <timer> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 65026x8-bit single-port RAM                           : 1
+ 8x8-bit dual-port RAM                                 : 1
+# Multipliers                                          : 2
+ 9x8-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 190
+ 10-bit adder                                          : 8
+ 10-bit subtractor                                     : 4
+ 17-bit adder                                          : 4
+ 2-bit adder                                           : 18
+ 2-bit addsub                                          : 1
+ 3-bit adder                                           : 20
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 59
+ 4-bit addsub                                          : 1
+ 5-bit adder                                           : 9
+ 6-bit adder                                           : 8
+ 7-bit adder                                           : 9
+ 8-bit adder                                           : 23
+ 8-bit subtractor                                      : 5
+ 9-bit adder                                           : 6
+ 9-bit subtractor                                      : 14
+# Registers                                            : 107
+ 1-bit register                                        : 43
+ 17-bit register                                       : 2
+ 2-bit register                                        : 2
+ 200-bit register                                      : 1
+ 25-bit register                                       : 1
+ 3-bit register                                        : 5
+ 32-bit register                                       : 1
+ 4-bit register                                        : 4
+ 5-bit register                                        : 2
+ 8-bit register                                        : 44
+ 9-bit register                                        : 2
+# Comparators                                          : 201
+ 10-bit comparator lessequal                           : 4
+ 32-bit comparator equal                               : 6
+ 32-bit comparator lessequal                           : 6
+ 32-bit comparator not equal                           : 1
+ 4-bit comparator greater                              : 1
+ 8-bit comparator equal                                : 6
+ 8-bit comparator lessequal                            : 168
+ 8-bit comparator not equal                            : 4
+ 9-bit comparator equal                                : 3
+ 9-bit comparator lessequal                            : 1
+ 9-bit comparator not equal                            : 1
+# Multiplexers                                         : 797
+ 1-bit 2-to-1 multiplexer                              : 326
+ 1-bit 25-to-1 multiplexer                             : 9
+ 1-bit 28-to-1 multiplexer                             : 1
+ 1-bit 8-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 1
+ 25-bit 2-to-1 multiplexer                             : 53
+ 3-bit 2-to-1 multiplexer                              : 21
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 12-to-1 multiplexer                             : 1
+ 4-bit 14-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 31
+ 5-bit 2-to-1 multiplexer                              : 14
+ 8-bit 2-to-1 multiplexer                              : 316
+ 8-bit 4-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 18
+# FSMs                                                 : 7
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <current_x_reg_8> (without init value) has a constant value of 0 in block <M1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <current_y_reg_8> (without init value) has a constant value of 0 in block <M1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <RxD_data_Opponent_3> of sequential type is unconnected in block <I1>.
+WARNING:Xst:2677 - Node <RxD_data_Opponent_4> of sequential type is unconnected in block <I1>.
+WARNING:Xst:2677 - Node <RxD_data_Opponent_5> of sequential type is unconnected in block <I1>.
+WARNING:Xst:2677 - Node <RxD_data_Opponent_6> of sequential type is unconnected in block <I1>.
+WARNING:Xst:2677 - Node <RxD_data_Opponent_7> of sequential type is unconnected in block <I1>.
+WARNING:Xst:2677 - Node <state_4> of sequential type is unconnected in block <FSM1>.
+
+Synthesizing (advanced) Unit <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1225_Madd1> :
+ 	<Madd_n0978[1:0]> in block <A_azimuth>, 	<Madd_n0984[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0990[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1225_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1228_Madd1> :
+ 	<Madd_n1041[1:0]> in block <A_azimuth>, 	<Madd_n1047[3:0]_Madd> in block <A_azimuth>, 	<Madd_n1053[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1228_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1231_Madd1> :
+ 	<Madd_n0894[1:0]> in block <A_azimuth>, 	<Madd_n0900[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0906[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1231_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1237_Madd1> :
+ 	<Madd_n1020[1:0]> in block <A_azimuth>, 	<Madd_n1026[3:0]_Madd> in block <A_azimuth>, 	<Madd_n1032[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1237_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1234_Madd1> :
+ 	<Madd_n0915[1:0]> in block <A_azimuth>, 	<Madd_n0921[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0927[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1234_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1240_Madd1> :
+ 	<Madd_n0936[1:0]> in block <A_azimuth>, 	<Madd_n0942[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0948[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1240_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1243_Madd1> :
+ 	<Madd_n0999[1:0]> in block <A_azimuth>, 	<Madd_n1005[3:0]_Madd> in block <A_azimuth>, 	<Madd_n1011[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1243_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1246_Madd1> :
+ 	<Madd_n0957[1:0]> in block <A_azimuth>, 	<Madd_n0963[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0969[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1246_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd_line_number_Madd1> :
+ 	<Madd__n1698> in block <A_azimuth>, 	<Madd__n1699> in block <A_azimuth>, 	<Madd__n1701_Madd> in block <A_azimuth>, 	<Madd_n0873[1:0]> in block <A_azimuth>, 	<Madd_line_number_Madd> in block <A_azimuth>.
+Unit <A_azimuth> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Score>.
+	The following adders/subtractors are grouped into adder tree <Madd_line_number_Madd1> :
+ 	<Madd__n0132> in block <Score>, 	<Madd__n0133> in block <Score>, 	<Madd__n0135_Madd> in block <Score>, 	<Madd_n0084[1:0]> in block <Score>, 	<Madd_line_number_Madd> in block <Score>.
+Unit <Score> synthesized (advanced).
+
+Synthesizing (advanced) Unit <async_receiver>.
+The following registers are absorbed into counter <RxD_cnt_inv>: 1 register on signal <RxD_cnt_inv>.
+The following registers are absorbed into counter <gap_count>: 1 register on signal <gap_count>.
+Unit <async_receiver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fifo>.
+The following registers are absorbed into counter <wr_ptr>: 1 register on signal <wr_ptr>.
+The following registers are absorbed into counter <rd_ptr>: 1 register on signal <rd_ptr>.
+The following registers are absorbed into counter <fifo_counter>: 1 register on signal <fifo_counter>.
+INFO:Xst:3231 - The small RAM <Mram_buf_mem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <wr_ptr>        |          |
+    |     diA            | connected to signal <_n0073>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     addrB          | connected to signal <rd_ptr>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <fifo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mem_reader>.
+	Multiplier <Mmult_n0897> in block <mem_reader> and adder/subtractor <Madd_n0518_Madd> in block <mem_reader> are combined into a MAC<Maddsub_n0897>.
+	Adder/Subtractor <Madd_n0869> in block <mem_reader> and  <Maddsub_n0897> in block <mem_reader> are combined into a MAC with pre-adder <Maddsub_n08971>.
+	The following registers are also absorbed by the MAC with pre-adder: <x_reg> in block <mem_reader>.
+Unit <mem_reader> synthesized (advanced).
+
+Synthesizing (advanced) Unit <memory_handler>.
+	Multiplier <Mmult_n0220> in block <memory_handler> and adder/subtractor <Madd_n0117_Madd> in block <memory_handler> are combined into a MAC<Maddsub_n0220>.
+	Adder/Subtractor <Madd_n0199> in block <memory_handler> and  <Maddsub_n0220> in block <memory_handler> are combined into a MAC with pre-adder <Maddsub_n02201>.
+	The following registers are also absorbed by the MAC with pre-adder: <current_x> in block <memory_handler>.
+Unit <memory_handler> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_single>.
+INFO:Xst:3226 - The RAM <Mram_mem> will be implemented as a BLOCK RAM, absorbing the following register(s): <q>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 65026-word x 8-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <d>             |          |
+    |     doA            | connected to signal <q>             |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ram_single> synthesized (advanced).
+
+Synthesizing (advanced) Unit <timer>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <timer> synthesized (advanced).
+WARNING:Xst:2677 - Node <state_4> of sequential type is unconnected in block <FSM>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 65026x8-bit single-port block RAM                     : 1
+ 8x8-bit dual-port distributed RAM                     : 1
+# MACs                                                 : 2
+ 8x9-to-16-bit MAC with pre-adder                      : 2
+# Adders/Subtractors                                   : 54
+ 10-bit adder                                          : 4
+ 10-bit subtractor                                     : 4
+ 17-bit adder                                          : 2
+ 4-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 8-bit adder                                           : 21
+ 8-bit subtractor                                      : 5
+ 9-bit adder                                           : 2
+ 9-bit subtractor                                      : 14
+# Adder Trees                                          : 18
+ 4-bit / 6-inputs adder tree                           : 10
+ 8-bit / 5-inputs adder tree                           : 8
+# Counters                                             : 6
+ 2-bit updown counter                                  : 1
+ 3-bit up counter                                      : 2
+ 32-bit up counter                                     : 1
+ 4-bit updown counter                                  : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 691
+ Flip-Flops                                            : 691
+# Comparators                                          : 201
+ 10-bit comparator lessequal                           : 4
+ 32-bit comparator equal                               : 6
+ 32-bit comparator lessequal                           : 6
+ 32-bit comparator not equal                           : 1
+ 4-bit comparator greater                              : 1
+ 8-bit comparator equal                                : 6
+ 8-bit comparator lessequal                            : 168
+ 8-bit comparator not equal                            : 4
+ 9-bit comparator equal                                : 3
+ 9-bit comparator lessequal                            : 1
+ 9-bit comparator not equal                            : 1
+# Multiplexers                                         : 796
+ 1-bit 2-to-1 multiplexer                              : 326
+ 1-bit 25-to-1 multiplexer                             : 9
+ 1-bit 28-to-1 multiplexer                             : 1
+ 1-bit 8-to-1 multiplexer                              : 2
+ 16-bit 2-to-1 multiplexer                             : 1
+ 25-bit 2-to-1 multiplexer                             : 53
+ 3-bit 2-to-1 multiplexer                              : 21
+ 4-bit 12-to-1 multiplexer                             : 1
+ 4-bit 14-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 31
+ 5-bit 2-to-1 multiplexer                              : 14
+ 8-bit 2-to-1 multiplexer                              : 316
+ 8-bit 4-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 18
+# FSMs                                                 : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <current_x_reg_8> in Unit <mem_reader> is equivalent to the following FF/Latch, which will be removed : <current_y_reg_8> 
+WARNING:Xst:1710 - FF/Latch <current_x_reg_8> (without init value) has a constant value of 0 in block <mem_reader>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_10> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_9> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <I1/FSM_4> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+ 1100  | 1100
+ 1101  | 1101
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <H1/FSM_5> on signal <state[1:10]> with one-hot encoding.
+---------------------
+ State | Encoding
+---------------------
+ 0000  | 0000000001
+ 0001  | 0000000010
+ 0011  | 0000000100
+ 0010  | 0000001000
+ 0111  | 0000010000
+ 0101  | 0000100000
+ 0110  | 0001000000
+ 1000  | 0010000000
+ 0100  | 0100000000
+ 1001  | 1000000000
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <MH11/FSM_6> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 000
+ 0001  | 001
+ 0010  | 011
+ 0100  | 010
+ 0101  | 110
+ 0011  | 111
+ 0110  | 101
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <mp1/M1/FSM_7> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00011 | 00
+ 00001 | 01
+ 00010 | 11
+ 00000 | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <mp1/A1/FSM_8> on signal <state[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 00000
+ 00001 | 00001
+ 00010 | 00010
+ 00011 | 00011
+ 00100 | 00100
+ 00101 | 00101
+ 00111 | 00111
+ 01000 | 01000
+ 01001 | 01001
+ 00110 | 00110
+-------------------
+WARNING:Xst:1710 - FF/Latch <buf_in_7> (without init value) has a constant value of 0 in block <Handout>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <buf_in_4> in Unit <Handout> is equivalent to the following FF/Latch, which will be removed : <buf_in_5> 
+
+Optimizing unit <TOP> ...
+
+Optimizing unit <async_transmitter> ...
+
+Optimizing unit <async_receiver> ...
+
+Optimizing unit <Interpreter> ...
+
+Optimizing unit <Handout> ...
+
+Optimizing unit <memory_handler> ...
+
+Optimizing unit <MP> ...
+
+Optimizing unit <FSM> ...
+
+Optimizing unit <mem_reader> ...
+WARNING:Xst:1293 - FF/Latch <counter_6> has a constant value of 0 in block <mem_reader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_7> has a constant value of 0 in block <mem_reader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <counter_5> has a constant value of 0 in block <mem_reader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <counter_5> has a constant value of 0 in block <mem_reader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_6> has a constant value of 0 in block <mem_reader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_7> has a constant value of 0 in block <mem_reader>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <A_azimuth> ...
+
+Optimizing unit <Score> ...
+
+Optimizing unit <fifo> ...
+WARNING:Xst:2677 - Node <U1/receiver_module/gap_count_4> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <U1/receiver_module/gap_count_3> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <U1/receiver_module/gap_count_2> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <U1/receiver_module/gap_count_1> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <U1/receiver_module/gap_count_0> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <U1/receiver_module/RxD_endofpacket> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <I1/blue> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <I1/color_valid> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <I1/RxD_data_Opponent_7> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <I1/RxD_data_Opponent_6> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <I1/RxD_data_Opponent_5> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <I1/RxD_data_Opponent_4> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <I1/RxD_data_Opponent_3> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/hnloc_x_7> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/hnloc_x_6> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/hnloc_x_5> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/hnloc_x_4> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/hnloc_x_3> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/hnloc_x_2> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/hnloc_x_1> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/hnloc_x_0> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/fnloc_x_7> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/fnloc_x_6> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/fnloc_x_5> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/fnloc_x_4> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/fnloc_x_3> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/fnloc_x_2> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/fnloc_x_1> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/fnloc_x_0> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/gnloc_x_7> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/gnloc_x_6> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/gnloc_x_5> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/gnloc_x_4> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/gnloc_x_3> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/gnloc_x_2> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/gnloc_x_1> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/gnloc_x_0> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/dnloc_x_7> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/dnloc_x_6> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/dnloc_x_5> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/dnloc_x_4> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/dnloc_x_3> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/dnloc_x_2> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/dnloc_x_1> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/dnloc_x_0> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/cnloc_x_7> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/cnloc_x_6> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/cnloc_x_5> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/cnloc_x_4> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/cnloc_x_3> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/cnloc_x_2> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/cnloc_x_1> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/cnloc_x_0> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/bnloc_x_7> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/bnloc_x_6> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/bnloc_x_5> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/bnloc_x_4> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/bnloc_x_3> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/bnloc_x_2> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/bnloc_x_1> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/bnloc_x_0> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/enloc_x_7> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/enloc_x_6> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/enloc_x_5> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/enloc_x_4> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/enloc_x_3> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/enloc_x_2> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/enloc_x_1> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/enloc_x_0> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/anloc_x_7> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/anloc_x_6> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/anloc_x_5> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/anloc_x_4> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/anloc_x_3> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/anloc_x_2> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/anloc_x_1> of sequential type is unconnected in block <TOP>.
+WARNING:Xst:2677 - Node <mp1/A1/anloc_x_0> of sequential type is unconnected in block <TOP>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 64.
+FlipFlop mp1/FSM1/color has been replicated 2 time(s)
+FlipFlop mp1/FSM1/current_x_0 has been replicated 4 time(s)
+FlipFlop mp1/FSM1/current_x_1 has been replicated 5 time(s)
+FlipFlop mp1/FSM1/current_x_2 has been replicated 4 time(s)
+FlipFlop mp1/FSM1/current_x_3 has been replicated 2 time(s)
+FlipFlop mp1/FSM1/current_x_4 has been replicated 3 time(s)
+FlipFlop mp1/FSM1/current_x_5 has been replicated 1 time(s)
+FlipFlop mp1/FSM1/current_x_6 has been replicated 3 time(s)
+FlipFlop mp1/FSM1/current_x_7 has been replicated 2 time(s)
+FlipFlop mp1/FSM1/current_y_0 has been replicated 3 time(s)
+FlipFlop mp1/FSM1/current_y_1 has been replicated 3 time(s)
+FlipFlop mp1/FSM1/current_y_2 has been replicated 3 time(s)
+FlipFlop mp1/FSM1/current_y_3 has been replicated 3 time(s)
+FlipFlop mp1/FSM1/current_y_4 has been replicated 2 time(s)
+FlipFlop mp1/FSM1/current_y_5 has been replicated 2 time(s)
+FlipFlop mp1/FSM1/current_y_6 has been replicated 1 time(s)
+FlipFlop mp1/FSM1/current_y_7 has been replicated 2 time(s)
+FlipFlop mp1/FSM1/length_2 has been replicated 1 time(s)
+FlipFlop mp1/FSM1/state_0 has been replicated 9 time(s)
+FlipFlop mp1/FSM1/state_1 has been replicated 10 time(s)
+FlipFlop mp1/FSM1/state_2 has been replicated 8 time(s)
+FlipFlop mp1/FSM1/state_3 has been replicated 10 time(s)
+FlipFlop mp1/FSM1/width_1 has been replicated 2 time(s)
+FlipFlop mp1/FSM1/width_2 has been replicated 2 time(s)
+FlipFlop mp1/FSM1/width_3 has been replicated 2 time(s)
+FlipFlop mp1/FSM1/width_4 has been replicated 2 time(s)
+FlipFlop mp1/FSM1/width_5 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <TOP> :
+	Found 2-bit shift register for signal <U1/receiver_module/RxD_sync_inv_1>.
+Unit <TOP> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 768
+ Flip-Flops                                            : 768
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3484
+#      GND                         : 1
+#      INV                         : 25
+#      LUT1                        : 19
+#      LUT2                        : 194
+#      LUT3                        : 296
+#      LUT4                        : 329
+#      LUT5                        : 524
+#      LUT6                        : 1718
+#      MUXCY                       : 147
+#      MUXF7                       : 69
+#      MUXF8                       : 2
+#      VCC                         : 1
+#      XORCY                       : 159
+# FlipFlops/Latches                : 769
+#      FD                          : 93
+#      FDE                         : 508
+#      FDR                         : 16
+#      FDRE                        : 152
+# RAMS                             : 40
+#      RAM16X1D                    : 8
+#      RAMB16BWER                  : 32
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+# DSPs                             : 2
+#      DSP48A1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             769  out of  11440     6%  
+ Number of Slice LUTs:                 3122  out of   5720    54%  
+    Number used as Logic:              3105  out of   5720    54%  
+    Number used as Memory:               17  out of   1440     1%  
+       Number used as RAM:               16
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3620
+   Number with an unused Flip Flop:    2851  out of   3620    78%  
+   Number with an unused LUT:           498  out of   3620    13%  
+   Number of fully used LUT-FF pairs:   271  out of   3620     7%  
+   Number of unique control sets:        76
+
+IO Utilization: 
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    102     2%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               32  out of     32   100%  
+    Number using Block RAM only:         32
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 812   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 17.694ns (Maximum Frequency: 56.516MHz)
+   Minimum input arrival time before clock: 2.586ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 17.694ns (frequency: 56.516MHz)
+  Total number of paths / destination ports: 6830285114 / 2322
+-------------------------------------------------------------------------
+Delay:               17.694ns (Levels of Logic = 24)
+  Source:            mp1/FSM1/state_0_6 (FF)
+  Destination:       mp1/FSM1/bestvalh_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: mp1/FSM1/state_0_6 to mp1/FSM1/bestvalh_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.447   1.085  mp1/FSM1/state_0_6 (mp1/FSM1/state_0_6)
+     LUT4:I1->O           10   0.205   1.085  mp1/FSM1/comp_a<4>1_1 (mp1/FSM1/comp_a<4>1)
+     LUT6:I3->O           20   0.205   1.197  mp1/Mmux_data_newloc64 (mp1/data_newloc<1>)
+     LUT3:I1->O            5   0.203   0.715  mp1/A1/data_out_newloc[7]_data_out_newloc[0]_OR_259_o<0>_SW0 (N176)
+     LUT6:I5->O           14   0.205   0.958  mp1/A1/Mmux_my_move253 (mp1/A1/Mmux_my_move253)
+     LUT6:I5->O           12   0.205   0.909  mp1/A1/Mmux_my_move228 (mp1/A1/Mmux_my_move230)
+     LUT6:I5->O           19   0.205   1.072  mp1/A1/Mmux_my_move31_1 (mp1/A1/Mmux_my_move31)
+     LUT6:I5->O            1   0.205   0.000  mp1/A1/GND_21_o_g_perm_AND_483_o23_SW5_G (N1000)
+     MUXF7:I1->O           3   0.140   0.755  mp1/A1/GND_21_o_g_perm_AND_483_o23_SW5 (N423)
+     LUT6:I4->O            6   0.203   0.745  mp1/A1/Sg/Mmux_score5_1 (mp1/A1/Sg/Mmux_score5)
+     LUT6:I5->O            1   0.205   0.684  mp1/A1/cm/b[7]_b[7]_AND_553_o15_SW2 (N312)
+     LUT6:I4->O            2   0.203   0.617  mp1/A1/cm/b[7]_b[7]_AND_553_o15 (mp1/A1/cm/b[7]_b[7]_AND_553_o1)
+     LUT6:I5->O            1   0.205   0.580  mp1/A1/instance_name/a[7]_h[7]_AND_535_o_SW0_SW0 (N628)
+     LUT6:I5->O            7   0.205   0.878  mp1/A1/instance_name/a[7]_h[7]_AND_535_o (mp1/A1/instance_name/a[7]_h[7]_AND_535_o)
+     LUT6:I4->O            6   0.203   0.745  mp1/A1/Mmux_bestval1121 (mp1/A1/Mmux_bestval1121)
+     LUT6:I5->O            1   0.205   0.580  mp1/A1/instance_name/Mmux_max63 (mp1/A1/instance_name/Mmux_max62)
+     LUT6:I5->O            1   0.205   0.000  mp1/A1/Madd_n0697_Madd_lut<1> (mp1/A1/Madd_n0697_Madd_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  mp1/A1/Madd_n0697_Madd_cy<1> (mp1/A1/Madd_n0697_Madd_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  mp1/A1/Madd_n0697_Madd_cy<2> (mp1/A1/Madd_n0697_Madd_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  mp1/A1/Madd_n0697_Madd_cy<3> (mp1/A1/Madd_n0697_Madd_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  mp1/A1/Madd_n0697_Madd_cy<4> (mp1/A1/Madd_n0697_Madd_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  mp1/A1/Madd_n0697_Madd_cy<5> (mp1/A1/Madd_n0697_Madd_cy<5>)
+     MUXCY:CI->O           0   0.019   0.000  mp1/A1/Madd_n0697_Madd_cy<6> (mp1/A1/Madd_n0697_Madd_cy<6>)
+     XORCY:CI->O           1   0.180   0.684  mp1/A1/Madd_n0697_Madd_xor<7> (mp1/A1/n0697<7>)
+     LUT5:I3->O            8   0.203   0.000  mp1/A1/Mmux_bestval81 (mp1/bestvala<7>)
+     FDRE:D                    0.102          mp1/FSM1/bestvala_7
+    ----------------------------------------
+    Total                     17.694ns (4.406ns logic, 13.288ns route)
+                                       (24.9% logic, 75.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.586ns (Levels of Logic = 2)
+  Source:            RxD (PAD)
+  Destination:       U1/receiver_module/Mshreg_RxD_sync_inv_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: RxD to U1/receiver_module/Mshreg_RxD_sync_inv_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  RxD_IBUF (RxD_IBUF)
+     INV:I->O              1   0.206   0.579  U1/receiver_module/RxD_INV_2_o1_INV_0 (U1/receiver_module/RxD_INV_2_o)
+     SRLC16E:D                -0.060          U1/receiver_module/Mshreg_RxD_sync_inv_1
+    ----------------------------------------
+    Total                      2.586ns (1.428ns logic, 1.158ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            U1/transmitter_module/TxD (FF)
+  Destination:       TxD (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U1/transmitter_module/TxD to TxD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  U1/transmitter_module/TxD (U1/transmitter_module/TxD)
+     OBUF:I->O                 2.571          TxD_OBUF (TxD)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   17.694|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 89.00 secs
+Total CPU time to Xst completion: 89.47 secs
+ 
+--> 
+
+Total memory usage is 520384 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  239 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

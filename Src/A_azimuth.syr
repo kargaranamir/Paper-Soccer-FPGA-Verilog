@@ -1,0 +1,915 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: A_azimuth.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "A_azimuth.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "A_azimuth"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : A_azimuth
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Score.v" into library work
+Parsing module <Score>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\comparator_min.v" into library work
+Parsing module <comparator_min>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\comparator.v" into library work
+Parsing module <comparator>.
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" into library work
+Parsing module <A_azimuth>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <A_azimuth>.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 293: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 297: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 298: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 302: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 307: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 308: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 313: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 317: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 318: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 322: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 327: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 328: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 416: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 421: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 422: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 426: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 431: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 432: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 437: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 441: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 442: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 446: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 451: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 452: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <Score>.
+WARNING:HDLCompiler:872 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Score.v" Line 80: Using initial value of x_score since it is never assigned
+
+Elaborating module <comparator>.
+
+Elaborating module <comparator_min>.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 625: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 626: Result of 10-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <A_azimuth>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v".
+WARNING:Xst:647 - Input <data_out7> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <no_perm_valid>.
+    Found 5-bit register for signal <state>.
+    Found 8-bit register for signal <nloc_x>.
+    Found 8-bit register for signal <nloc_y>.
+    Found 8-bit register for signal <anloc_x>.
+    Found 8-bit register for signal <anloc_y>.
+    Found 8-bit register for signal <bnloc_x>.
+    Found 8-bit register for signal <bnloc_y>.
+    Found 8-bit register for signal <cnloc_x>.
+    Found 8-bit register for signal <cnloc_y>.
+    Found 8-bit register for signal <dnloc_x>.
+    Found 8-bit register for signal <dnloc_y>.
+    Found 8-bit register for signal <enloc_x>.
+    Found 8-bit register for signal <enloc_y>.
+    Found 8-bit register for signal <fnloc_x>.
+    Found 8-bit register for signal <fnloc_y>.
+    Found 8-bit register for signal <gnloc_x>.
+    Found 8-bit register for signal <gnloc_y>.
+    Found 8-bit register for signal <hnloc_x>.
+    Found 8-bit register for signal <hnloc_y>.
+    Found 1-bit register for signal <no_perm>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_302_OUT> created at line 382.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_315_OUT> created at line 390.
+    Found 2-bit adder for signal <n0733[1:0]> created at line 203.
+    Found 3-bit adder for signal <n0736[2:0]> created at line 203.
+    Found 2-bit adder for signal <n0754[1:0]> created at line 341.
+    Found 3-bit adder for signal <n0757[2:0]> created at line 341.
+    Found 4-bit adder for signal <n0760[3:0]> created at line 341.
+    Found 5-bit adder for signal <n0763[4:0]> created at line 341.
+    Found 6-bit adder for signal <n0766[5:0]> created at line 341.
+    Found 7-bit adder for signal <n0769[6:0]> created at line 341.
+    Found 8-bit adder for signal <_n1045> created at line 341.
+    Found 2-bit adder for signal <n0775[1:0]> created at line 342.
+    Found 3-bit adder for signal <n0778[2:0]> created at line 342.
+    Found 4-bit adder for signal <n0781[3:0]> created at line 342.
+    Found 5-bit adder for signal <n0784[4:0]> created at line 342.
+    Found 6-bit adder for signal <n0787[5:0]> created at line 342.
+    Found 7-bit adder for signal <n0790[6:0]> created at line 342.
+    Found 8-bit adder for signal <_n1048> created at line 342.
+    Found 2-bit adder for signal <n0796[1:0]> created at line 343.
+    Found 3-bit adder for signal <n0799[2:0]> created at line 343.
+    Found 4-bit adder for signal <n0802[3:0]> created at line 343.
+    Found 5-bit adder for signal <n0805[4:0]> created at line 343.
+    Found 6-bit adder for signal <n0808[5:0]> created at line 343.
+    Found 7-bit adder for signal <n0811[6:0]> created at line 343.
+    Found 8-bit adder for signal <_n1054> created at line 343.
+    Found 2-bit adder for signal <n0817[1:0]> created at line 344.
+    Found 3-bit adder for signal <n0820[2:0]> created at line 344.
+    Found 4-bit adder for signal <n0823[3:0]> created at line 344.
+    Found 5-bit adder for signal <n0826[4:0]> created at line 344.
+    Found 6-bit adder for signal <n0829[5:0]> created at line 344.
+    Found 7-bit adder for signal <n0832[6:0]> created at line 344.
+    Found 8-bit adder for signal <_n1060> created at line 344.
+    Found 2-bit adder for signal <n0838[1:0]> created at line 346.
+    Found 3-bit adder for signal <n0841[2:0]> created at line 346.
+    Found 4-bit adder for signal <n0844[3:0]> created at line 346.
+    Found 5-bit adder for signal <n0847[4:0]> created at line 346.
+    Found 6-bit adder for signal <n0850[5:0]> created at line 346.
+    Found 7-bit adder for signal <n0853[6:0]> created at line 346.
+    Found 8-bit adder for signal <_n1057> created at line 346.
+    Found 2-bit adder for signal <n0859[1:0]> created at line 347.
+    Found 3-bit adder for signal <n0862[2:0]> created at line 347.
+    Found 4-bit adder for signal <n0865[3:0]> created at line 347.
+    Found 5-bit adder for signal <n0868[4:0]> created at line 347.
+    Found 6-bit adder for signal <n0871[5:0]> created at line 347.
+    Found 7-bit adder for signal <n0874[6:0]> created at line 347.
+    Found 8-bit adder for signal <_n1051> created at line 347.
+    Found 2-bit adder for signal <n0880[1:0]> created at line 348.
+    Found 3-bit adder for signal <n0883[2:0]> created at line 348.
+    Found 4-bit adder for signal <n0886[3:0]> created at line 348.
+    Found 5-bit adder for signal <n0889[4:0]> created at line 348.
+    Found 6-bit adder for signal <n0892[5:0]> created at line 348.
+    Found 7-bit adder for signal <n0895[6:0]> created at line 348.
+    Found 8-bit adder for signal <_n1042> created at line 348.
+    Found 9-bit adder for signal <_n0963> created at line 374.
+    Found 9-bit adder for signal <_n0969> created at line 390.
+    Found 8-bit adder for signal <nloc_y[7]_GND_1_o_add_326_OUT> created at line 416.
+    Found 8-bit adder for signal <nloc_x[7]_GND_1_o_add_330_OUT> created at line 421.
+    Found 9-bit adder for signal <n0589> created at line 625.
+    Found 9-bit adder for signal <n0590> created at line 626.
+    Found 8-bit subtractor for signal <GND_1_o_GND_1_o_sub_341_OUT<7:0>> created at line 432.
+    Found 8-bit subtractor for signal <GND_1_o_GND_1_o_sub_349_OUT<7:0>> created at line 441.
+    Found 4-bit adder for signal <_n1451> created at line 202.
+    Found 4-bit adder for signal <_n1452> created at line 202.
+    Found 4-bit adder for signal <_n1453> created at line 202.
+    Found 4-bit adder for signal <_n1454> created at line 202.
+    Found 4-bit adder for signal <line_number> created at line 202.
+    Found 1-bit 25-to-1 multiplexer for signal <desired_point_number[4]_X_1_o_Mux_119_o> created at line 238.
+    Found 1-bit 8-to-1 multiplexer for signal <desired_direction_number[2]_data_out12[7]_Mux_120_o> created at line 238.
+    Found 1-bit 25-to-1 multiplexer for signal <a[4]_X_1_o_Mux_229_o> created at line 349.
+    Found 1-bit 25-to-1 multiplexer for signal <b[4]_X_1_o_Mux_233_o> created at line 350.
+    Found 1-bit 25-to-1 multiplexer for signal <c[4]_X_1_o_Mux_235_o> created at line 351.
+    Found 1-bit 25-to-1 multiplexer for signal <d[4]_X_1_o_Mux_240_o> created at line 352.
+    Found 1-bit 25-to-1 multiplexer for signal <f[4]_X_1_o_Mux_245_o> created at line 354.
+    Found 1-bit 25-to-1 multiplexer for signal <g[4]_X_1_o_Mux_247_o> created at line 355.
+    Found 1-bit 25-to-1 multiplexer for signal <h[4]_X_1_o_Mux_252_o> created at line 356.
+    Found 8-bit comparator not equal for signal <nloc_x[7]_width[7]_equal_232_o> created at line 349
+    Found 8-bit comparator not equal for signal <nloc_y[7]_length[7]_equal_238_o> created at line 351
+    Found 8-bit comparator equal for signal <current_x[7]_width[7]_equal_291_o> created at line 378
+    Found 32-bit comparator equal for signal <GND_1_o_GND_1_o_equal_305_o> created at line 382
+    Found 32-bit comparator equal for signal <GND_1_o_GND_1_o_equal_307_o> created at line 382
+    Found 8-bit comparator equal for signal <current_y[7]_length[7]_equal_313_o> created at line 386
+    Found 32-bit comparator equal for signal <GND_1_o_GND_1_o_equal_318_o> created at line 390
+    Found 8-bit comparator equal for signal <GND_1_o_GND_1_o_equal_314_o> created at line 386
+    Found 9-bit comparator equal for signal <GND_1_o_GND_1_o_equal_283_o> created at line 374
+    Found 9-bit comparator equal for signal <GND_1_o_GND_1_o_equal_322_o> created at line 390
+    Found 9-bit comparator equal for signal <GND_1_o_GND_1_o_equal_324_o> created at line 390
+    Found 8-bit comparator not equal for signal <GND_1_o_GND_1_o_equal_240_o> created at line 351
+    Summary:
+	inferred  66 Adder/Subtractor(s).
+	inferred 146 D-type flip-flop(s).
+	inferred  12 Comparator(s).
+	inferred 305 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <A_azimuth> synthesized.
+
+Synthesizing Unit <Score>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Score.v".
+WARNING:Xst:647 - Input <old_x> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <new_x> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <length> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <width> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <my_move> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 9-bit subtractor for signal <y_diff1> created at line 39.
+    Found 9-bit subtractor for signal <y_diff2> created at line 40.
+    Found 2-bit adder for signal <n0082[1:0]> created at line 106.
+    Found 3-bit adder for signal <n0085[2:0]> created at line 106.
+    Found 8-bit adder for signal <y_score[7]_GND_2_o_add_35_OUT> created at line 129.
+    Found 4-bit adder for signal <_n0130> created at line 106.
+    Found 4-bit adder for signal <_n0131> created at line 106.
+    Found 4-bit adder for signal <_n0132> created at line 106.
+    Found 4-bit adder for signal <_n0133> created at line 106.
+    Found 4-bit adder for signal <line_number> created at line 106.
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred   5 Multiplexer(s).
+Unit <Score> synthesized.
+
+Synthesizing Unit <comparator>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\comparator.v".
+    Found 8-bit comparator lessequal for signal <n0000> created at line 16
+    Found 8-bit comparator lessequal for signal <n0002> created at line 16
+    Found 8-bit comparator lessequal for signal <n0005> created at line 16
+    Found 8-bit comparator lessequal for signal <n0008> created at line 16
+    Found 8-bit comparator lessequal for signal <n0011> created at line 16
+    Found 8-bit comparator lessequal for signal <n0014> created at line 16
+    Found 8-bit comparator lessequal for signal <n0017> created at line 16
+    Found 8-bit comparator lessequal for signal <n0020> created at line 20
+    Found 8-bit comparator lessequal for signal <n0022> created at line 20
+    Found 8-bit comparator lessequal for signal <n0025> created at line 20
+    Found 8-bit comparator lessequal for signal <n0028> created at line 20
+    Found 8-bit comparator lessequal for signal <n0031> created at line 20
+    Found 8-bit comparator lessequal for signal <n0034> created at line 20
+    Found 8-bit comparator lessequal for signal <n0037> created at line 20
+    Found 8-bit comparator lessequal for signal <n0040> created at line 24
+    Found 8-bit comparator lessequal for signal <n0042> created at line 24
+    Found 8-bit comparator lessequal for signal <n0045> created at line 24
+    Found 8-bit comparator lessequal for signal <n0048> created at line 24
+    Found 8-bit comparator lessequal for signal <n0051> created at line 24
+    Found 8-bit comparator lessequal for signal <n0054> created at line 24
+    Found 8-bit comparator lessequal for signal <n0057> created at line 24
+    Found 8-bit comparator lessequal for signal <n0060> created at line 28
+    Found 8-bit comparator lessequal for signal <n0062> created at line 28
+    Found 8-bit comparator lessequal for signal <n0065> created at line 28
+    Found 8-bit comparator lessequal for signal <n0068> created at line 28
+    Found 8-bit comparator lessequal for signal <n0071> created at line 28
+    Found 8-bit comparator lessequal for signal <n0074> created at line 28
+    Found 8-bit comparator lessequal for signal <n0077> created at line 28
+    Found 8-bit comparator lessequal for signal <n0080> created at line 32
+    Found 8-bit comparator lessequal for signal <n0082> created at line 32
+    Found 8-bit comparator lessequal for signal <n0085> created at line 32
+    Found 8-bit comparator lessequal for signal <n0088> created at line 32
+    Found 8-bit comparator lessequal for signal <n0091> created at line 32
+    Found 8-bit comparator lessequal for signal <n0094> created at line 32
+    Found 8-bit comparator lessequal for signal <n0097> created at line 32
+    Found 8-bit comparator lessequal for signal <n0100> created at line 36
+    Found 8-bit comparator lessequal for signal <n0102> created at line 36
+    Found 8-bit comparator lessequal for signal <n0105> created at line 36
+    Found 8-bit comparator lessequal for signal <n0108> created at line 36
+    Found 8-bit comparator lessequal for signal <n0111> created at line 36
+    Found 8-bit comparator lessequal for signal <n0114> created at line 36
+    Found 8-bit comparator lessequal for signal <n0117> created at line 36
+    Found 8-bit comparator lessequal for signal <n0120> created at line 40
+    Found 8-bit comparator lessequal for signal <n0122> created at line 40
+    Found 8-bit comparator lessequal for signal <n0125> created at line 40
+    Found 8-bit comparator lessequal for signal <n0128> created at line 40
+    Found 8-bit comparator lessequal for signal <n0131> created at line 40
+    Found 8-bit comparator lessequal for signal <n0134> created at line 40
+    Found 8-bit comparator lessequal for signal <n0137> created at line 40
+    Found 8-bit comparator lessequal for signal <n0140> created at line 44
+    Found 8-bit comparator lessequal for signal <n0142> created at line 44
+    Found 8-bit comparator lessequal for signal <n0145> created at line 44
+    Found 8-bit comparator lessequal for signal <n0148> created at line 44
+    Found 8-bit comparator lessequal for signal <n0151> created at line 44
+    Found 8-bit comparator lessequal for signal <n0154> created at line 44
+    Found 8-bit comparator lessequal for signal <n0157> created at line 44
+    Summary:
+	inferred  56 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <comparator> synthesized.
+
+Synthesizing Unit <comparator_min>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\comparator_min.v".
+    Found 8-bit comparator lessequal for signal <n0000> created at line 16
+    Found 8-bit comparator lessequal for signal <n0002> created at line 16
+    Found 8-bit comparator lessequal for signal <n0005> created at line 16
+    Found 8-bit comparator lessequal for signal <n0008> created at line 16
+    Found 8-bit comparator lessequal for signal <n0011> created at line 16
+    Found 8-bit comparator lessequal for signal <n0014> created at line 16
+    Found 8-bit comparator lessequal for signal <n0017> created at line 16
+    Found 8-bit comparator lessequal for signal <n0020> created at line 20
+    Found 8-bit comparator lessequal for signal <n0022> created at line 20
+    Found 8-bit comparator lessequal for signal <n0025> created at line 20
+    Found 8-bit comparator lessequal for signal <n0028> created at line 20
+    Found 8-bit comparator lessequal for signal <n0031> created at line 20
+    Found 8-bit comparator lessequal for signal <n0034> created at line 20
+    Found 8-bit comparator lessequal for signal <n0037> created at line 20
+    Found 8-bit comparator lessequal for signal <n0040> created at line 24
+    Found 8-bit comparator lessequal for signal <n0042> created at line 24
+    Found 8-bit comparator lessequal for signal <n0045> created at line 24
+    Found 8-bit comparator lessequal for signal <n0048> created at line 24
+    Found 8-bit comparator lessequal for signal <n0051> created at line 24
+    Found 8-bit comparator lessequal for signal <n0054> created at line 24
+    Found 8-bit comparator lessequal for signal <n0057> created at line 24
+    Found 8-bit comparator lessequal for signal <n0060> created at line 28
+    Found 8-bit comparator lessequal for signal <n0062> created at line 28
+    Found 8-bit comparator lessequal for signal <n0065> created at line 28
+    Found 8-bit comparator lessequal for signal <n0068> created at line 28
+    Found 8-bit comparator lessequal for signal <n0071> created at line 28
+    Found 8-bit comparator lessequal for signal <n0074> created at line 28
+    Found 8-bit comparator lessequal for signal <n0077> created at line 28
+    Found 8-bit comparator lessequal for signal <n0080> created at line 32
+    Found 8-bit comparator lessequal for signal <n0082> created at line 32
+    Found 8-bit comparator lessequal for signal <n0085> created at line 32
+    Found 8-bit comparator lessequal for signal <n0088> created at line 32
+    Found 8-bit comparator lessequal for signal <n0091> created at line 32
+    Found 8-bit comparator lessequal for signal <n0094> created at line 32
+    Found 8-bit comparator lessequal for signal <n0097> created at line 32
+    Found 8-bit comparator lessequal for signal <n0100> created at line 36
+    Found 8-bit comparator lessequal for signal <n0102> created at line 36
+    Found 8-bit comparator lessequal for signal <n0105> created at line 36
+    Found 8-bit comparator lessequal for signal <n0108> created at line 36
+    Found 8-bit comparator lessequal for signal <n0111> created at line 36
+    Found 8-bit comparator lessequal for signal <n0114> created at line 36
+    Found 8-bit comparator lessequal for signal <n0117> created at line 36
+    Found 8-bit comparator lessequal for signal <n0120> created at line 40
+    Found 8-bit comparator lessequal for signal <n0122> created at line 40
+    Found 8-bit comparator lessequal for signal <n0125> created at line 40
+    Found 8-bit comparator lessequal for signal <n0128> created at line 40
+    Found 8-bit comparator lessequal for signal <n0131> created at line 40
+    Found 8-bit comparator lessequal for signal <n0134> created at line 40
+    Found 8-bit comparator lessequal for signal <n0137> created at line 40
+    Found 8-bit comparator lessequal for signal <n0140> created at line 44
+    Found 8-bit comparator lessequal for signal <n0142> created at line 44
+    Found 8-bit comparator lessequal for signal <n0145> created at line 44
+    Found 8-bit comparator lessequal for signal <n0148> created at line 44
+    Found 8-bit comparator lessequal for signal <n0151> created at line 44
+    Found 8-bit comparator lessequal for signal <n0154> created at line 44
+    Summary:
+	inferred  55 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <comparator_min> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 147
+ 2-bit adder                                           : 17
+ 3-bit adder                                           : 17
+ 4-bit adder                                           : 57
+ 5-bit adder                                           : 7
+ 6-bit adder                                           : 7
+ 7-bit adder                                           : 7
+ 8-bit adder                                           : 18
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 4
+ 9-bit subtractor                                      : 11
+# Registers                                            : 20
+ 1-bit register                                        : 2
+ 8-bit register                                        : 18
+# Comparators                                          : 123
+ 32-bit comparator equal                               : 3
+ 8-bit comparator equal                                : 3
+ 8-bit comparator lessequal                            : 111
+ 8-bit comparator not equal                            : 3
+ 9-bit comparator equal                                : 3
+# Multiplexers                                         : 366
+ 1-bit 2-to-1 multiplexer                              : 273
+ 1-bit 25-to-1 multiplexer                             : 8
+ 1-bit 8-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 57
+ 9-bit 2-to-1 multiplexer                              : 18
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <enloc_y_0> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_1> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_2> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_3> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_4> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_5> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_6> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_7> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1042_Madd1> :
+ 	<Madd_n0880[1:0]> in block <A_azimuth>, 	<Madd_n0886[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0892[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1042_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1045_Madd1> :
+ 	<Madd_n0754[1:0]> in block <A_azimuth>, 	<Madd_n0760[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0766[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1045_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1051_Madd1> :
+ 	<Madd_n0859[1:0]> in block <A_azimuth>, 	<Madd_n0865[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0871[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1051_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1048_Madd1> :
+ 	<Madd_n0775[1:0]> in block <A_azimuth>, 	<Madd_n0781[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0787[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1048_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1054_Madd1> :
+ 	<Madd_n0796[1:0]> in block <A_azimuth>, 	<Madd_n0802[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0808[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1054_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1060_Madd1> :
+ 	<Madd_n0817[1:0]> in block <A_azimuth>, 	<Madd_n0823[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0829[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1060_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd__n1057_Madd1> :
+ 	<Madd_n0838[1:0]> in block <A_azimuth>, 	<Madd_n0844[3:0]_Madd> in block <A_azimuth>, 	<Madd_n0850[5:0]_Madd> in block <A_azimuth>, 	<Madd__n1057_Madd> in block <A_azimuth>.
+	The following adders/subtractors are grouped into adder tree <Madd_line_number_Madd1> :
+ 	<Madd__n1451> in block <A_azimuth>, 	<Madd__n1452> in block <A_azimuth>, 	<Madd__n1454_Madd> in block <A_azimuth>, 	<Madd_n0733[1:0]> in block <A_azimuth>, 	<Madd_line_number_Madd> in block <A_azimuth>.
+Unit <A_azimuth> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Score>.
+	The following adders/subtractors are grouped into adder tree <Madd_line_number_Madd1> :
+ 	<Madd__n0130> in block <Score>, 	<Madd__n0131> in block <Score>, 	<Madd__n0133_Madd> in block <Score>, 	<Madd_n0082[1:0]> in block <Score>, 	<Madd_line_number_Madd> in block <Score>.
+Unit <Score> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 28
+ 8-bit adder                                           : 13
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 2
+ 9-bit subtractor                                      : 11
+# Adder Trees                                          : 17
+ 4-bit / 6-inputs adder tree                           : 10
+ 8-bit / 5-inputs adder tree                           : 7
+# Registers                                            : 146
+ Flip-Flops                                            : 146
+# Comparators                                          : 123
+ 32-bit comparator equal                               : 3
+ 8-bit comparator equal                                : 3
+ 8-bit comparator lessequal                            : 111
+ 8-bit comparator not equal                            : 3
+ 9-bit comparator equal                                : 3
+# Multiplexers                                         : 366
+ 1-bit 2-to-1 multiplexer                              : 273
+ 1-bit 25-to-1 multiplexer                             : 8
+ 1-bit 8-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 57
+ 9-bit 2-to-1 multiplexer                              : 18
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <enloc_x_0> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_x_1> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_x_2> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_x_3> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_x_4> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_x_5> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_x_6> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_x_7> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_0> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_1> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_2> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_3> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_4> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_5> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_6> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <enloc_y_7> (without init value) has a constant value of 0 in block <A_azimuth>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 00
+ 00001 | 01
+ 00010 | 10
+ 00011 | 11
+-------------------
+
+Optimizing unit <A_azimuth> ...
+
+Optimizing unit <Score> ...
+WARNING:Xst:2677 - Node <anloc_x_0> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <anloc_x_1> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <anloc_x_2> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <anloc_x_3> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <anloc_x_4> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <anloc_x_5> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <anloc_x_6> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <anloc_x_7> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <bnloc_x_0> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <bnloc_x_1> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <bnloc_x_2> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <bnloc_x_3> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <bnloc_x_4> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <bnloc_x_5> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <bnloc_x_6> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <bnloc_x_7> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <cnloc_x_0> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <cnloc_x_1> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <cnloc_x_2> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <cnloc_x_3> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <cnloc_x_4> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <cnloc_x_5> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <cnloc_x_6> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <cnloc_x_7> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <fnloc_x_0> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <fnloc_x_1> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <fnloc_x_2> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <fnloc_x_3> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <fnloc_x_4> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <fnloc_x_5> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <fnloc_x_6> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <fnloc_x_7> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <dnloc_x_0> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <dnloc_x_1> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <dnloc_x_2> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <dnloc_x_3> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <dnloc_x_4> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <dnloc_x_5> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <dnloc_x_6> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <dnloc_x_7> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <gnloc_x_0> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <gnloc_x_1> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <gnloc_x_2> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <gnloc_x_3> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <gnloc_x_4> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <gnloc_x_5> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <gnloc_x_6> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <gnloc_x_7> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <hnloc_x_0> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <hnloc_x_1> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <hnloc_x_2> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <hnloc_x_3> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <hnloc_x_4> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <hnloc_x_5> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <hnloc_x_6> of sequential type is unconnected in block <A_azimuth>.
+WARNING:Xst:2677 - Node <hnloc_x_7> of sequential type is unconnected in block <A_azimuth>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block A_azimuth, actual ratio is 25.
+FlipFlop nloc_y_0 has been replicated 1 time(s)
+FlipFlop nloc_y_1 has been replicated 1 time(s)
+FlipFlop nloc_y_2 has been replicated 1 time(s)
+FlipFlop nloc_y_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 80
+ Flip-Flops                                            : 80
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : A_azimuth.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1057
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 122
+#      LUT3                        : 185
+#      LUT4                        : 43
+#      LUT5                        : 121
+#      LUT6                        : 407
+#      MUXCY                       : 74
+#      MUXF7                       : 15
+#      MUXF8                       : 3
+#      VCC                         : 1
+#      XORCY                       : 84
+# FlipFlops/Latches                : 80
+#      FD                          : 10
+#      FDE                         : 68
+#      FDR                         : 1
+#      FDRE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 154
+#      IBUF                        : 139
+#      OBUF                        : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              80  out of  11440     0%  
+ Number of Slice LUTs:                  879  out of   5720    15%  
+    Number used as Logic:               879  out of   5720    15%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    894
+   Number with an unused Flip Flop:     814  out of    894    91%  
+   Number with an unused LUT:            15  out of    894     1%  
+   Number of fully used LUT-FF pairs:    65  out of    894     7%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                         163
+ Number of bonded IOBs:                 155  out of    102   151% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 80    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.567ns (Maximum Frequency: 179.624MHz)
+   Minimum input arrival time before clock: 13.323ns
+   Maximum output required time after clock: 20.878ns
+   Maximum combinational path delay: 25.420ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.567ns (frequency: 179.624MHz)
+  Total number of paths / destination ports: 1989 / 130
+-------------------------------------------------------------------------
+Delay:               5.567ns (Levels of Logic = 5)
+  Source:            nloc_y_3 (FF)
+  Destination:       cnloc_y_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: nloc_y_3 to cnloc_y_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.447   1.072  nloc_y_3 (nloc_y_3)
+     LUT4:I3->O            2   0.205   0.617  c_perm21711 (c_perm2171)
+     LUT6:I5->O            1   0.205   0.684  c_perm211 (c_perm211)
+     LUT6:I4->O            2   0.203   0.617  c_perm214 (c_perm214)
+     LUT5:I4->O           16   0.205   1.005  c_perm221_rstpot (c_perm221_rstpot)
+     LUT6:I5->O            1   0.205   0.000  cnloc_y_0_dpot2 (cnloc_y_0_dpot2)
+     FDE:D                     0.102          cnloc_y_0
+    ----------------------------------------
+    Total                      5.567ns (1.572ns logic, 3.995ns route)
+                                       (28.2% logic, 71.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 38023 / 116
+-------------------------------------------------------------------------
+Offset:              13.323ns (Levels of Logic = 12)
+  Source:            current_y<0> (PAD)
+  Destination:       anloc_y_6 (FF)
+  Destination Clock: clk rising
+
+  Data Path: current_y<0> to anloc_y_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.222   1.639  current_y_0_IBUF (Madd__n0969_cy<0>)
+     LUT5:I1->O            4   0.203   1.048  Msub_GND_1_o_GND_1_o_sub_302_OUT_xor<4>11 (GND_1_o_GND_1_o_sub_302_OUT<4>)
+     LUT6:I0->O            1   0.203   0.924  Mmux_my_move323 (Mmux_my_move323)
+     LUT6:I1->O            1   0.203   0.924  Mmux_my_move326_SW0 (N210)
+     LUT6:I1->O            1   0.203   0.924  Mmux_my_move326 (Mmux_my_move326)
+     LUT6:I1->O            1   0.203   0.580  Mmux_my_move328_SW0 (N212)
+     LUT6:I5->O            1   0.205   0.684  Mmux_my_move328 (Mmux_my_move328)
+     LUT6:I4->O           26   0.203   1.207  Mmux_my_move340 (my_move_OBUF)
+     LUT5:I4->O           10   0.205   1.085  a_perm18_rstpot (a_perm18_rstpot)
+     LUT6:I3->O            1   0.205   0.000  a_perm16_SW7_G (N105)
+     MUXF7:I1->O           1   0.140   0.808  a_perm16_SW7 (N98)
+     LUT6:I3->O            1   0.205   0.000  anloc_y_6_rstpot (anloc_y_6_rstpot)
+     FD:D                      0.102          anloc_y_6
+    ----------------------------------------
+    Total                     13.323ns (3.502ns logic, 9.821ns route)
+                                       (26.3% logic, 73.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4272221 / 12
+-------------------------------------------------------------------------
+Offset:              20.878ns (Levels of Logic = 17)
+  Source:            nloc_y_6 (FF)
+  Destination:       bestval<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: nloc_y_6 to bestval<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             17   0.447   1.256  nloc_y_6 (nloc_y_6)
+     LUT6:I3->O            1   0.205   0.580  c_perm23 (c_perm23)
+     LUT6:I5->O            1   0.205   0.580  c_perm25_SW0 (N216)
+     LUT6:I5->O           17   0.205   1.392  c_perm25 (c_perm25)
+     LUT6:I0->O            2   0.203   0.961  c_perm221 (c_perm2)
+     LUT6:I1->O            9   0.203   1.174  c_perm5 (c_perm)
+     LUT5:I0->O           15   0.203   1.346  Sc/Mmux_score21 (scorec<1>)
+     LUT6:I0->O            1   0.203   0.808  cm/c[7]_a[7]_LessThan_15_o23 (cm/c[7]_a[7]_LessThan_15_o22)
+     LUT3:I0->O            1   0.205   0.808  cm/c[7]_a[7]_LessThan_15_o24_SW0 (N176)
+     LUT5:I2->O            2   0.205   0.981  cm/c[7]_a[7]_LessThan_15_o24 (cm/c[7]_a[7]_LessThan_15_o)
+     LUT6:I0->O            1   0.203   0.580  cm/c[7]_c[7]_AND_119_o_SW0 (N16)
+     LUT6:I5->O            6   0.205   0.849  cm/c[7]_c[7]_AND_119_o (cm/c[7]_c[7]_AND_119_o)
+     LUT4:I2->O            1   0.203   0.580  cm/Mmux_min111_SW0 (N28)
+     LUT6:I5->O            5   0.205   0.962  cm/Mmux_min111 (cm/Mmux_min111)
+     LUT6:I2->O            1   0.203   0.580  Mmux_bestval15 (Mmux_bestval14)
+     LUT6:I5->O            1   0.205   0.580  Mmux_bestval16 (Mmux_bestval15)
+     LUT3:I2->O            1   0.205   0.579  Mmux_bestval17 (bestval_0_OBUF)
+     OBUF:I->O                 2.571          bestval_0_OBUF (bestval<0>)
+    ----------------------------------------
+    Total                     20.878ns (6.284ns logic, 14.594ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 29146596 / 9
+-------------------------------------------------------------------------
+Delay:               25.420ns (Levels of Logic = 21)
+  Source:            current_y<0> (PAD)
+  Destination:       bestval<0> (PAD)
+
+  Data Path: current_y<0> to bestval<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.222   1.639  current_y_0_IBUF (Madd__n0969_cy<0>)
+     LUT5:I1->O            4   0.203   1.048  Msub_GND_1_o_GND_1_o_sub_302_OUT_xor<4>11 (GND_1_o_GND_1_o_sub_302_OUT<4>)
+     LUT6:I0->O            1   0.203   0.924  Mmux_my_move323 (Mmux_my_move323)
+     LUT6:I1->O            1   0.203   0.924  Mmux_my_move326_SW0 (N210)
+     LUT6:I1->O            1   0.203   0.924  Mmux_my_move326 (Mmux_my_move326)
+     LUT6:I1->O            1   0.203   0.580  Mmux_my_move328_SW0 (N212)
+     LUT6:I5->O            1   0.205   0.684  Mmux_my_move328 (Mmux_my_move328)
+     LUT6:I4->O           26   0.203   1.207  Mmux_my_move340 (my_move_OBUF)
+     LUT6:I5->O            9   0.205   1.174  c_perm5 (c_perm)
+     LUT5:I0->O           15   0.203   1.346  Sc/Mmux_score21 (scorec<1>)
+     LUT6:I0->O            1   0.203   0.808  cm/c[7]_a[7]_LessThan_15_o23 (cm/c[7]_a[7]_LessThan_15_o22)
+     LUT3:I0->O            1   0.205   0.808  cm/c[7]_a[7]_LessThan_15_o24_SW0 (N176)
+     LUT5:I2->O            2   0.205   0.981  cm/c[7]_a[7]_LessThan_15_o24 (cm/c[7]_a[7]_LessThan_15_o)
+     LUT6:I0->O            1   0.203   0.580  cm/c[7]_c[7]_AND_119_o_SW0 (N16)
+     LUT6:I5->O            6   0.205   0.849  cm/c[7]_c[7]_AND_119_o (cm/c[7]_c[7]_AND_119_o)
+     LUT4:I2->O            1   0.203   0.580  cm/Mmux_min111_SW0 (N28)
+     LUT6:I5->O            5   0.205   0.962  cm/Mmux_min111 (cm/Mmux_min111)
+     LUT6:I2->O            1   0.203   0.580  Mmux_bestval15 (Mmux_bestval14)
+     LUT6:I5->O            1   0.205   0.580  Mmux_bestval16 (Mmux_bestval15)
+     LUT3:I2->O            1   0.205   0.579  Mmux_bestval17 (bestval_0_OBUF)
+     OBUF:I->O                 2.571          bestval_0_OBUF (bestval<0>)
+    ----------------------------------------
+    Total                     25.420ns (7.666ns logic, 17.754ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.567|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.79 secs
+ 
+--> 
+
+Total memory usage is 514220 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  114 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

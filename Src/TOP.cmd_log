@@ -1,0 +1,503 @@
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TOP.ucf -p xc6slx9-tqg144-3 "TOP.ngc" TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf TOP.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.ncd
+OUTFILE=E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2
+LICENSE=WebPack
+USER_INFO=__0_0_0

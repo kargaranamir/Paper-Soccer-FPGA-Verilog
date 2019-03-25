@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/memory_handler.xst" -ofn "E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/memory_handler.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "memory_handler.ngc" memory_handler.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o memory_handler_map.ncd memory_handler.ngd memory_handler.pcf 

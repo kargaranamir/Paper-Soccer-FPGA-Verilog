@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Nov 21 14:31:02 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "RxD" LOCATE = SITE "P105" LEVEL 1;
+COMP "TxD" LOCATE = SITE "P104" LEVEL 1;
+COMP "clk" LOCATE = SITE "P50" LEVEL 1;
+SCHEMATIC END;
+

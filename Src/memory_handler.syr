@@ -1,0 +1,517 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: memory_handler.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "memory_handler.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "memory_handler"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : memory_handler
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" into library work
+Parsing module <memory_handler>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <memory_handler>.
+WARNING:HDLCompiler:1127 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 53: Assignment to length ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 142: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 146: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 147: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 151: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 155: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 156: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 160: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 164: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 165: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 169: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 173: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 174: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v" Line 181: Result of 18-bit expression is truncated to fit in 16-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <memory_handler>.
+    Related source file is "E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\memory_handler.v".
+WARNING:Xst:647 - Input <length_in<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <width>.
+    Found 3-bit register for signal <direction>.
+    Found 8-bit register for signal <current_x>.
+    Found 8-bit register for signal <current_y>.
+    Found 1-bit register for signal <second_point>.
+    Found 1-bit register for signal <we>.
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 21                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <current_y[7]_GND_1_o_add_42_OUT> created at line 142.
+    Found 8-bit adder for signal <current_x[7]_GND_1_o_add_46_OUT> created at line 147.
+    Found 9-bit adder for signal <n0251> created at line 181.
+    Found 17-bit adder for signal <n0176> created at line 181.
+    Found 8-bit subtractor for signal <GND_1_o_GND_1_o_sub_55_OUT<7:0>> created at line 156.
+    Found 8-bit subtractor for signal <GND_1_o_GND_1_o_sub_62_OUT<7:0>> created at line 164.
+    Found 9x8-bit multiplier for signal <n0274> created at line 181.
+    Found 1-bit 8-to-1 multiplexer for signal <data_out[7]_data_in[7]_MUX_30_o> created at line 246.
+    Found 1-bit 8-to-1 multiplexer for signal <data_out[7]_data_in[7]_MUX_49_o> created at line 246.
+    Found 1-bit 8-to-1 multiplexer for signal <data_out[7]_data_in[7]_MUX_68_o> created at line 246.
+    Found 1-bit 8-to-1 multiplexer for signal <data_out[7]_data_in[7]_MUX_87_o> created at line 246.
+    Found 1-bit 8-to-1 multiplexer for signal <data_out[7]_data_in[7]_MUX_106_o> created at line 246.
+    Found 1-bit 8-to-1 multiplexer for signal <data_out[7]_data_in[7]_MUX_125_o> created at line 246.
+    Found 1-bit 8-to-1 multiplexer for signal <data_out[7]_data_in[7]_MUX_144_o> created at line 246.
+    Found 1-bit 8-to-1 multiplexer for signal <data_out[7]_data_in[7]_MUX_163_o> created at line 246.
+    Found 1-bit 7-to-1 multiplexer for signal <data_out[7]_data_in[7]_mux_112_OUT<7>> created at line 240.
+    Found 1-bit 7-to-1 multiplexer for signal <data_out[7]_data_in[7]_mux_112_OUT<6>> created at line 240.
+    Found 1-bit 7-to-1 multiplexer for signal <data_out[7]_data_in[7]_mux_112_OUT<5>> created at line 240.
+    Found 1-bit 7-to-1 multiplexer for signal <data_out[7]_data_in[7]_mux_112_OUT<4>> created at line 240.
+    Found 1-bit 7-to-1 multiplexer for signal <data_out[7]_data_in[7]_mux_112_OUT<3>> created at line 240.
+    Found 1-bit 7-to-1 multiplexer for signal <data_out[7]_data_in[7]_mux_112_OUT<2>> created at line 240.
+    Found 1-bit 7-to-1 multiplexer for signal <data_out[7]_data_in[7]_mux_112_OUT<1>> created at line 240.
+    Found 1-bit 7-to-1 multiplexer for signal <data_out[7]_data_in[7]_mux_112_OUT<0>> created at line 240.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_out<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   8 Latch(s).
+	inferred  43 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <memory_handler> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 9x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 6
+ 17-bit adder                                          : 1
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 1
+# Registers                                            : 6
+ 1-bit register                                        : 2
+ 3-bit register                                        : 1
+ 8-bit register                                        : 3
+# Latches                                              : 8
+ 1-bit latch                                           : 8
+# Multiplexers                                         : 43
+ 1-bit 2-to-1 multiplexer                              : 9
+ 1-bit 7-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 8
+ 8-bit 2-to-1 multiplexer                              : 18
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <memory_handler>.
+	Multiplier <Mmult_n0274> in block <memory_handler> and adder/subtractor <Madd_n0176_Madd> in block <memory_handler> are combined into a MAC<Maddsub_n0274>.
+	Adder/Subtractor <Madd_n0251> in block <memory_handler> and  <Maddsub_n0274> in block <memory_handler> are combined into a MAC with pre-adder <Maddsub_n02741>.
+	The following registers are also absorbed by the MAC with pre-adder: <current_x> in block <memory_handler>.
+Unit <memory_handler> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 1
+ 8x9-to-16-bit MAC with pre-adder                      : 1
+# Adders/Subtractors                                   : 4
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 2
+# Registers                                            : 29
+ Flip-Flops                                            : 29
+# Multiplexers                                         : 50
+ 1-bit 2-to-1 multiplexer                              : 17
+ 1-bit 7-to-1 multiplexer                              : 8
+ 1-bit 8-to-1 multiplexer                              : 8
+ 8-bit 2-to-1 multiplexer                              : 17
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 000
+ 0001  | 001
+ 0010  | 011
+ 0100  | 010
+ 0101  | 110
+ 0011  | 111
+ 0110  | 101
+-------------------
+
+Optimizing unit <memory_handler> ...
+WARNING:Xst:1294 - Latch <data_out_7> is equivalent to a wire in block <memory_handler>.
+WARNING:Xst:1294 - Latch <data_out_6> is equivalent to a wire in block <memory_handler>.
+WARNING:Xst:1294 - Latch <data_out_5> is equivalent to a wire in block <memory_handler>.
+WARNING:Xst:1294 - Latch <data_out_4> is equivalent to a wire in block <memory_handler>.
+WARNING:Xst:1294 - Latch <data_out_3> is equivalent to a wire in block <memory_handler>.
+WARNING:Xst:1294 - Latch <data_out_2> is equivalent to a wire in block <memory_handler>.
+WARNING:Xst:1294 - Latch <data_out_1> is equivalent to a wire in block <memory_handler>.
+WARNING:Xst:1294 - Latch <data_out_0> is equivalent to a wire in block <memory_handler>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block memory_handler, actual ratio is 1.
+FlipFlop direction_1 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop direction_1 connected to a primary input has been replicated
+FlipFlop direction_2 has been replicated 2 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop direction_2 connected to a primary input has been replicated
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : memory_handler.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 81
+#      GND                         : 1
+#      LUT2                        : 7
+#      LUT3                        : 9
+#      LUT4                        : 8
+#      LUT5                        : 26
+#      LUT6                        : 28
+#      MUXF7                       : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 27
+#      FDR                         : 5
+#      FDRE                        : 22
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 72
+#      IBUF                        : 30
+#      OBUF                        : 42
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              27  out of  11440     0%  
+ Number of Slice LUTs:                   78  out of   5720     1%  
+    Number used as Logic:                78  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     83
+   Number with an unused Flip Flop:      56  out of     83    67%  
+   Number with an unused LUT:             5  out of     83     6%  
+   Number of fully used LUT-FF pairs:    22  out of     83    26%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          74
+ Number of bonded IOBs:                  73  out of    102    71%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 28    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.027ns (Maximum Frequency: 198.944MHz)
+   Minimum input arrival time before clock: 3.700ns
+   Maximum output required time after clock: 6.263ns
+   Maximum combinational path delay: 5.157ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.027ns (frequency: 198.944MHz)
+  Total number of paths / destination ports: 783 / 63
+-------------------------------------------------------------------------
+Delay:               5.027ns (Levels of Logic = 4)
+  Source:            direction_0 (FF)
+  Destination:       Maddsub_n02741 (DSP)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: direction_0 to Maddsub_n02741
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            21   0.447   1.114  direction_0 (direction_0)
+     LUT5:I4->O            4   0.205   0.684  Mmux_current_y[7]_current_y[7]_mux_73_OUT4121 (Mmux_current_y[7]_current_y[7]_mux_73_OUT412)
+     LUT3:I2->O            2   0.205   0.617  Mmux_current_y[7]_current_y[7]_mux_73_OUT8521 (Mmux_current_y[7]_current_y[7]_mux_73_OUT852)
+     LUT6:I5->O            1   0.205   0.580  Mmux_current_y[7]_current_y[7]_mux_73_OUT61 (Mmux_current_y[7]_current_y[7]_mux_73_OUT6)
+     LUT5:I4->O            2   0.205   0.616  Mmux_current_y[7]_current_y[7]_mux_73_OUT62 (current_y[7]_current_y[7]_mux_73_OUT<5>)
+     DSP48A1:A5                0.149          Maddsub_n02741
+    ----------------------------------------
+    Total                      5.027ns (1.416ns logic, 3.611ns route)
+                                       (28.2% logic, 71.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 100 / 99
+-------------------------------------------------------------------------
+Offset:              3.700ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       state_FSM_FFd1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            30   1.222   1.264  rst_IBUF (rst_IBUF)
+     LUT2:I1->O            1   0.205   0.579  state_FSM_FFd311 (state_FSM_FFd3_0)
+     FDR:R                     0.430          state_FSM_FFd1
+    ----------------------------------------
+    Total                      3.700ns (1.857ns logic, 1.843ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 68 / 42
+-------------------------------------------------------------------------
+Offset:              6.263ns (Levels of Logic = 1)
+  Source:            Maddsub_n02741 (DSP)
+  Destination:       address<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Maddsub_n02741 to address<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48A1:CLK->P15      1   3.113   0.579  Maddsub_n02741 (address_15_OBUF)
+     OBUF:I->O                 2.571          address_15_OBUF (address<15>)
+    ----------------------------------------
+    Total                      6.263ns (5.684ns logic, 0.579ns route)
+                                       (90.8% logic, 9.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               5.157ns (Levels of Logic = 3)
+  Source:            data_in<7> (PAD)
+  Destination:       data_out<7> (PAD)
+
+  Data Path: data_in<7> to data_out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.580  data_in_7_IBUF (data_in_7_IBUF)
+     LUT5:I4->O            1   0.205   0.579  Mmux_data_out[7]_data_out[7]_MUX_107_o271 (data_out_7_OBUF)
+     OBUF:I->O                 2.571          data_out_7_OBUF (data_out<7>)
+    ----------------------------------------
+    Total                      5.157ns (3.998ns logic, 1.159ns route)
+                                       (77.5% logic, 22.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.027|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.12 secs
+ 
+--> 
+
+Total memory usage is 282564 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   31 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

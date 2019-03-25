@@ -1,0 +1,26 @@
+NET "clk" LOC = P50;
+#NET "rst" LOC = P51;
+NET "TxD" LOC = P104;
+NET "RxD" LOC = P105;
+
+
+# PlanAhead Generated physical constraints 
+
+#NET "flag" LOC = P132;
+#NET "color_in" LOC = P131;
+#NET "data_out12[0]" LOC = P132;
+#NET "data_out12[1]" LOC = P131;
+#NET "data_out12[2]" LOC = P127;
+#NET "data_out12[3]" LOC = P126;
+#NET "data_out12[4]" LOC = P124;
+#NET "data_out12[5]" LOC = P123;
+#NET "data_out12[6]" LOC = P121;
+#NET "data_out12[7]" LOC = P120;
+#NET "current_y[0]" LOC = P132;
+#NET "current_y[1]" LOC = P131;
+#NET "current_y[2]" LOC = P127;
+#NET "current_y[3]" LOC = P126;
+#NET "current_y[4]" LOC = P124;
+#NET "current_y[5]" LOC = P123;
+#NET "current_y[6]" LOC = P121;
+#NET "current_y[7]" LOC = P120;
