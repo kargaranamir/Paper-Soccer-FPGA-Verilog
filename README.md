@@ -7,7 +7,7 @@ The first player to place the ball in the opponent's goal wins the game. The gam
 
 ![Screenshot](https://raw.github.com/Pawel834/Paper-Soccer/master/screen1.png "Screenshot")
 
-Code description (in polish)
+ description 
 ============================
 
 In addition to implementing different parts of the contest to communicate with other participants and interpreters , we tried to implement the Min-Max algorithm and even win the artificial intelligence of this game in some conditions.
