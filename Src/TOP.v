@@ -23,6 +23,7 @@ module TOP(
 	input clk,
 	//input rst,
 	output TxD,
+	output flag,////////////////////////////////////////////////
 	input RxD
 	//output color_in
 	//output reg flag=1'b0
@@ -150,6 +151,7 @@ Interpreter I1 (
     .direction_valid(direction_valid), //
     .data_in(data_ram), //
     .address(address_mp), //
+	 .flag(flag),////////////////////////////////////////////
     .my_move(my_move)//,
 	 //.data_out12(data_out12)
 	// .color_o(color_o)/////////////////////////////////

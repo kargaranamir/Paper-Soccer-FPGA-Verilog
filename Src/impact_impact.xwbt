@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=F:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\impact.xsl
+OUTFILE=F:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=F:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2
+LICENSE=iMPACT
+USER_INFO=iMPACT

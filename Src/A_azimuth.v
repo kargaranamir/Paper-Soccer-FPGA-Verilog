@@ -56,7 +56,7 @@ module A_azimuth(
 	input comp_h
 
     );
-	 assign color_o =color;
+	// assign color_o =color;
 	 
 	 reg [7:0] desired_point_number =0;
 	 reg [7:0] desired_direction_number=0;
@@ -192,15 +192,9 @@ module A_azimuth(
 	 end
 	 
 	localparam idle_s=0;
-	 localparam idle_s2=1;
-	 localparam perm_check=2;
-	 localparam perm_check2=3;
-	 localparam new_location=4;
-	 localparam new_location2=5;
-	 localparam make_decision=6;
-	 localparam make_decision2=7;
-	 localparam make_decision3=8;
-	 localparam make_decision4=9;
+	 localparam perm_check=1;
+	 localparam new_location=2;
+	 localparam make_decision=3;
 	 localparam red=1;
 	 localparam blue=0;
 	 
@@ -213,35 +207,35 @@ module A_azimuth(
 		begin
 			if(comp_a)
 			begin
-				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_x == width ) || (current_x == 0 );
+				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_x == width ) || (current_x == 0 ) || (current_y==length-1 && line_number==2) || (current_y==length/2-1 && line_number==5);
 			end
 			else if(comp_b)
 			begin
-				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_x == width-1 && current_y==length-1 ) ;
+				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_x == width-1 && current_y==length-1 )  || (current_x==width-1 && line_number==2) || (current_y==length-1 && line_number==2)|| (current_y==length/2-1 && line_number==5);
 			end
 			else if(comp_c)
 			begin
-				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_y == length ) || (current_y == 0 ) || (current_y == length/2);
+				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_y == length ) || (current_y == 0 ) || (current_y == length/2) || (current_x==width-1 && line_number==2);
 			end
 			else if(comp_d)
 			begin
-				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_x == width-1 && current_y==1 );
+				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_x == width-1 && current_y==1 ) || (current_x==width-1 && line_number==2) || (current_y==1 && line_number==2)|| (current_y==length/2+1 && line_number==5);
 			end
 			else if(comp_e)
 			begin
-				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_x == width ) || (current_x == 0 );
+				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_x == width ) || (current_x == 0 ) || (current_y==1 && line_number==2)|| (current_y==length/2+1 && line_number==5);
 			end
 			else if(comp_f)
 			begin
-				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 )||(current_x == 1 && current_y== 1 ) ;
+				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 )||(current_x == 1 && current_y== 1 ) || (current_x==1 && line_number==2) || (current_y==1 && line_number==2)|| (current_y==length/2+1 && line_number==5);
 			end
 			else if(comp_g)
 			begin
-				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_y == length ) || (current_y == 0 )|| (current_y == length/2 );
+				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_y == length ) || (current_y == 0 )|| (current_y == length/2 ) || (current_x==1 && line_number==2);
 			end
 			else if(comp_h)
 			begin
-				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_x == 1 && current_y==length-1 ) ;
+				no_perm<=(!status[desired_point_number]) ||(data_out12[desired_direction_number]) || (line_number == 7 ) || (current_x == 1 && current_y==length-1 ) || (current_x==1 && line_number==2) || (current_y==length-1 && line_number==2)|| (current_y==length/2-1 && line_number==5) ;
 			end
 			no_perm_valid<=1;
 		end
@@ -262,13 +256,8 @@ module A_azimuth(
 		begin
 			if(start)
 			begin
-				state<=idle_s2;
+				state<=perm_check;
 			end
-		end
-		if(state == idle_s2)
-		begin
-			state<=perm_check;
-			
 		end
 		if(state == perm_check)
 		begin
@@ -278,30 +267,10 @@ module A_azimuth(
 			end
 			else
 			begin
-				state<=perm_check2;
+				state<=new_location;
 			end
 		end
-		if(state == perm_check2)
-		begin
-			state<=new_location;
-		end
 		if(state == new_location)
-		begin
-			state<=new_location2;
-		end
-		if(state == new_location2)
-		begin
-			state<=make_decision2;
-		end
-		if(state == make_decision2)
-		begin
-			state<=make_decision3;
-		end
-		if(state == make_decision3)
-		begin
-			state<=make_decision4;
-		end
-		if(state == make_decision4)
 		begin
 			state<=make_decision;
 		end
@@ -374,18 +343,18 @@ module A_azimuth(
 	 assign b_linenumber = data_out3[0] + data_out3[1] + data_out3[2] + data_out3[3] + data_out3[4] + data_out3[5] + data_out3[6] + data_out3[7];
 	 assign c_linenumber = data_out8[0] + data_out8[1] + data_out8[2] + data_out8[3] + data_out8[4] + data_out8[5] + data_out8[6] + data_out8[7];
 	 assign d_linenumber = data_out13[0] + data_out13[1] + data_out13[2] + data_out13[3] + data_out13[4] + data_out13[5] + data_out13[6] + data_out13[7];
-	 assign e_linenumber = data_out12[0] + data_out12[1] + data_out12[2] + data_out12[3] + data_out12[4] + data_out12[5] + data_out12[6] + data_out12[7];
+	 assign e_linenumber = data_out7[0] + data_out7[1] + data_out7[2] + data_out7[3] + data_out7[4] + data_out7[5] + data_out7[6] + data_out7[7];///////////////////////////////////////////%%%%%%%%%
 	 assign f_linenumber = data_out11[0] + data_out11[1] + data_out11[2] + data_out11[3] + data_out11[4] + data_out11[5] + data_out11[6] + data_out11[7];
 	 assign g_linenumber = data_out6[0] + data_out6[1] + data_out6[2] + data_out6[3] + data_out6[4] + data_out6[5] + data_out6[6] + data_out6[7];
 	 assign h_linenumber = data_out1[0] + data_out1[1] + data_out1[2] + data_out1[3] + data_out1[4] + data_out1[5] + data_out1[6] + data_out1[7];
-	 assign a_perm = status[a] && (!data_out_newloc[0]) && !(my_move && (a_linenumber==7)) && !(nloc_x == width) && !(nloc_x == 0) && (!comp_e);
-	 assign b_perm = status[b] && (!data_out_newloc[1]) && !(my_move && (b_linenumber==7)) && (!comp_f);
-	 assign c_perm = status[c] && (!data_out_newloc[2]) && !(my_move && (c_linenumber==7)) && !(nloc_y == length) && !(nloc_y == 0) && !(nloc_y == length/2) && (!comp_g);
-	 assign d_perm = status[d] && (!data_out_newloc[3]) && !(my_move && (d_linenumber==7)) && (!comp_h);
-	 assign e_perm = status[e] && (!data_out_newloc[4]) && !(my_move && (e_linenumber==7)) && !(nloc_x == width) && (!comp_a);
-	 assign f_perm = status[f] && (!data_out_newloc[5]) && !(my_move && (f_linenumber==7)) &&(!comp_b);
-	 assign g_perm = status[g] && (!data_out_newloc[6]) && !(my_move && (g_linenumber==7)) && !(nloc_y == length) && !(nloc_y == 0) && !(nloc_y == length/2) && (!comp_c);
-	 assign h_perm = status[h] && (!data_out_newloc[7]) && !(my_move && (h_linenumber==7)) && (!comp_d);
+	 assign a_perm = status[a] && (!data_out_newloc[0]) && !(my_move && (a_linenumber==7)) && !(nloc_x == width) && !(nloc_x == 0) && (!comp_e) &&  !((nloc_y==length-1 && a_linenumber==2) || (nloc_y==length/2-1 && a_linenumber==5));
+	 assign b_perm = status[b] && (!data_out_newloc[1]) && !(my_move && (b_linenumber==7)) && (!comp_f) && !((nloc_x == width-1 && nloc_y==length-1 )  || (nloc_x==width-1 && b_linenumber==2) || (nloc_y==length-1 && b_linenumber==2)|| (nloc_y==length/2-1 && b_linenumber==5));
+	 assign c_perm = status[c] && (!data_out_newloc[2]) && !(my_move && (c_linenumber==7)) && !(nloc_y == length) && !(nloc_y == 0) && !(nloc_y == length/2) && (!comp_g) && !(nloc_x==width-1 && c_linenumber==2);
+	 assign d_perm = status[d] && (!data_out_newloc[3]) && !(my_move && (d_linenumber==7)) && (!comp_h) && !((nloc_x == width-1 && nloc_y==1 ) || (nloc_x==width-1 && d_linenumber==2) || (nloc_y==1 && d_linenumber==2)|| (nloc_y==length/2+1 && d_linenumber==5));
+	 assign e_perm = status[e] && (!data_out_newloc[4]) && !(my_move && (e_linenumber==7)) && !(nloc_x == width)&& !(nloc_x == 0) && (!comp_a) && !((nloc_y==1 && e_linenumber==2)|| (nloc_y==length/2+1 && e_linenumber==5));
+	 assign f_perm = status[f] && (!data_out_newloc[5]) && !(my_move && (f_linenumber==7)) &&(!comp_b) && !((nloc_x == 1 && nloc_y== 1 ) || (nloc_x==1 && f_linenumber==2) || (nloc_y==1 && f_linenumber==2)|| (nloc_y==length/2+1 && f_linenumber==5));
+	 assign g_perm = status[g] && (!data_out_newloc[6]) && !(my_move && (g_linenumber==7)) && !(nloc_y == length) && !(nloc_y == 0) && !(nloc_y == length/2) && (!comp_c) && !(nloc_x==1 && g_linenumber==2);
+	 assign h_perm = status[h] && (!data_out_newloc[7]) && !(my_move && (h_linenumber==7)) && (!comp_d) && !((nloc_x == 1 && nloc_y==length-1 ) || (nloc_x==1 && h_linenumber==2) || (nloc_y==length-1 && h_linenumber==2)|| (nloc_y==length/2-1 && h_linenumber==5));
 	 
 	 always @(*)
 	 begin
@@ -571,7 +540,7 @@ module A_azimuth(
     .old_y(current_y), 
     .new_x(enloc_x), 
     .new_y(enloc_y), 
-    .data_out(data_out12), 
+    .data_out(data_out7), ///////////////////////ghalat%%%%%%%%%%%%%%%%%%%%dorost shod
     .my_move(my_move), 
     .color(color), 
     .length(length), 
@@ -654,8 +623,8 @@ module A_azimuth(
 	 begin
 		if(state == make_decision)
 		begin
-			if(my_move)begin bestval = main_score *2 +max_score;end
-			else if (!my_move) begin bestval = main_score *2 +min_score;end
+			if(my_move)begin bestval = main_score  +max_score;end/////////////////////////%%%%%%%%%
+			else if (!my_move) begin bestval = main_score  +min_score;end////////////////////
 			else bestval=0;
 		end
 		else begin bestval=0; end

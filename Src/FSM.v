@@ -63,7 +63,7 @@ module FSM(
 	output comp_f,
 	output comp_g,
 	output comp_h,
-
+	output reg flag=1'b0,////////////////////////////////////////////
 	output reg my_move=1'b0
     );
 	 
@@ -88,7 +88,6 @@ module FSM(
 	 localparam computation_g=9;
 	 localparam computation_h=10;
 	 localparam make_decision=11;
-	 localparam make_decision2=15;///////////////////////////////////////////////
 	 localparam result=12;
 	 localparam computation_waiting=13;
 	 localparam initial_check=14;
@@ -107,6 +106,7 @@ module FSM(
 			if( ((current_x==width/2+1) && current_y==length && color==blue) || ((current_x==width/2-1) && current_y==length && color==blue) || ((current_x==width/2 )&& current_y==length && color==blue) || ((current_x==width/2+1) && current_y==0 && color==red) || ((current_x==width/2-1) && current_y==0 && color==red) || ((current_x==width/2) && current_y==0 && color==red))
 			begin
 				state<=result;
+				flag<=1'b1;
 			end
 			else
 			begin
@@ -173,11 +173,7 @@ module FSM(
 		end
 		if(state == make_decision)
 		begin
-			state<=make_decision2;
-		end
-		if(state == make_decision2)////////////////////////////////////////////////
-		begin
-			state<=result;///////////////////////////////////////
+			state<=result;
 		end
 		if(state == result)
 		begin
@@ -372,14 +368,14 @@ module FSM(
 					direction <= h;
 					my_move<=my_moveh;
 				end
-				else if((bestvalc<=bestvala) && (bestvalb<=bestvala) && (bestvald<=bestvala) && (bestvale<=bestvala) && (bestvalf<=bestvala) && (bestvalg<=bestvala) && (bestvalh<=bestvala)&& (!no_perm_c_r))
+				else if((bestvalc<=bestvala) && (bestvalb<=bestvala) && (bestvald<=bestvala) && (bestvale<=bestvala) && (bestvalf<=bestvala) && (bestvalg<=bestvala) && (bestvalh<=bestvala)&& (!no_perm_a_r))///////////////////%%%%%%%%%%
 				begin
 					direction <= a;
 					my_move<=my_movec;
 				end
 				else
 				begin
-					direction <= 1;//**********************////////\\\\\\\\****************************
+					direction <= 2;//**********************////////\\\\\\\\****************************
 					my_move<=1'b0;/////**************************\\\\\\\\\\\\\\\\\\\\\\\\
 				end
 			end
@@ -427,7 +423,7 @@ module FSM(
 				end
 				else
 				begin
-					direction <= 1;//*************************************************************************
+					direction <= 2;//*************************************************************************
 					my_move<=1'b0;////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 				end
 			end

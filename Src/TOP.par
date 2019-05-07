@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-883KM13::  Tue Nov 21 14:31:07 2017
+DESKTOP-883KM13::  Thu Nov 23 06:43:50 2017
 
 par -w -intstyle ise -ol high -mt off TOP_map.ncd TOP.ncd TOP.pcf 
 
@@ -13,11 +13,6 @@ Loading device for application Rf_Device from file '6slx9.nph' in environment C:
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
 Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
 
-INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
-   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
-   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
-   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
-   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
 
 Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 
@@ -26,16 +21,16 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   769 out of  11,440    6%
-    Number used as Flip Flops:                 769
+  Number of Slice Registers:                   726 out of  11,440    6%
+    Number used as Flip Flops:                 726
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      2,849 out of   5,720   49%
-    Number used as logic:                    2,839 out of   5,720   49%
-      Number using O6 output only:           2,496
+  Number of Slice LUTs:                      3,044 out of   5,720   53%
+    Number used as logic:                    3,031 out of   5,720   52%
+      Number using O6 output only:           2,679
       Number using O5 output only:              19
-      Number using O5 and O6:                  324
+      Number using O5 and O6:                  333
       Number used as ROM:                        0
     Number used as Memory:                       9 out of   1,440    1%
       Number used as Dual Port RAM:              8
@@ -47,18 +42,18 @@ Slice Logic Utilization:
         Number using O6 output only:             1
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:      1
-      Number with same-slice register load:      0
+    Number used exclusively as route-thrus:      4
+      Number with same-slice register load:      3
       Number with same-slice carry load:         0
       Number with other load:                    1
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   955 out of   1,430   66%
-  Number of MUXCYs used:                       196 out of   2,860    6%
-  Number of LUT Flip Flop pairs used:        2,964
-    Number with an unused Flip Flop:         2,211 out of   2,964   74%
-    Number with an unused LUT:                 115 out of   2,964    3%
-    Number of fully used LUT-FF pairs:         638 out of   2,964   21%
+  Number of occupied Slices:                   959 out of   1,430   67%
+  Number of MUXCYs used:                       188 out of   2,860    6%
+  Number of LUT Flip Flop pairs used:        3,115
+    Number with an unused Flip Flop:         2,408 out of   3,115   77%
+    Number with an unused LUT:                  71 out of   3,115    2%
+    Number of fully used LUT-FF pairs:         636 out of   3,115   20%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -69,8 +64,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         3 out of     102    2%
-    Number of LOCed IOBs:                        3 out of       3  100%
+  Number of bonded IOBs:                         4 out of     102    3%
+    Number of LOCed IOBs:                        4 out of       4  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                        32 out of      32  100%
@@ -101,35 +96,35 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 5 secs 
+Starting initial Timing Analysis.  REAL time: 4 secs 
 Finished initial Timing Analysis.  REAL time: 5 secs 
 
 Starting Router
 
 
-Phase  1  : 17200 unrouted;      REAL time: 5 secs 
+Phase  1  : 18123 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 16191 unrouted;      REAL time: 6 secs 
+Phase  2  : 17140 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 8177 unrouted;      REAL time: 11 secs 
+Phase  3  : 9211 unrouted;      REAL time: 9 secs 
 
-Phase  4  : 8179 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  4  : 9211 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
 
 Updating file: TOP.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 18 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
-Total REAL time to Router completion: 26 secs 
-Total CPU time to Router completion: 27 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 19 secs 
+Total REAL time to Router completion: 19 secs 
+Total CPU time to Router completion: 20 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -139,8 +134,26 @@ Partition Implementation Status
 -------------------------------
 
 Generating "PAR" statistics.
-INFO:Par:459 - The Clock Report is not displayed in the non timing-driven mode.
-Timing Score: 0 (Setup: 0, Hold: 0)
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGMUX_X3Y14| No   |  300 |  0.119     |  1.187      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -149,34 +162,30 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|    19.557ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.369ns|            |       0|           0
+  TS_clk = PERIOD TIMEGRP "clk" 40 ns HIGH  | SETUP       |    13.047ns|    26.953ns|       0|           0
+  50%                                       | HOLD        |     0.297ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
 All constraints were met.
-INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
-   constraint is not analyzed due to the following: No paths covered by this 
-   constraint; Other constraints intersect with this constraint; or This 
-   constraint was disabled by a Path Tracing Control. Please run the Timespec 
-   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
 
 
 Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 27 secs 
-Total CPU time to PAR completion: 28 secs 
+Total REAL time to PAR completion: 20 secs 
+Total CPU time to PAR completion: 21 secs 
 
-Peak Memory Usage:  452 MB
+Peak Memory Usage:  463 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
+Timing: Completed - No errors found.
 
 Number of error messages: 0
 Number of warning messages: 0
-Number of info messages: 2
+Number of info messages: 0
 
 Writing design to file TOP.ncd
 

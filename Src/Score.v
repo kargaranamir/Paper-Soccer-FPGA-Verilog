@@ -110,7 +110,7 @@ module Score(
 		//if(my_move)
 		//begin
 			case(line_number)
-				4'd0:frd_score=0;
+				4'd0:frd_score=2;
 				4'd1:frd_score=6;
 				4'd2:frd_score=5;
 				4'd3:frd_score=4;

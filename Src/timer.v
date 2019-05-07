@@ -28,7 +28,7 @@ module timer(
 	 reg [31:0] counter=0;
 	 reg [1:0] state=0;
 	 
-	 localparam N=49_500_000;
+	 localparam N=23_995_000;
 	 
 	 localparam idle=0;
 	 localparam counter_s=1;
@@ -57,7 +57,7 @@ module timer(
 		end
 	 end
 	 
-	 assign time_expire = state== (time_expire_s);
+	 assign time_expire = (state == time_expire_s);
 	 
 
 

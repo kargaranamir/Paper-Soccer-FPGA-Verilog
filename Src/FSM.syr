@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: FSM.prj
 
@@ -152,72 +152,76 @@ WARNING:Xst:647 - Input <finish_valid_a> is never used. This port will be preser
     Found 8-bit register for signal <bestvalh>.
     Found 1-bit register for signal <my_moveh>.
     Found 1-bit register for signal <no_perm_h_r>.
-    Found 3-bit register for signal <direction>.
     Found 1-bit register for signal <my_move>.
+    Found 3-bit register for signal <direction>.
     Found 5-bit register for signal <state>.
-    Found 8-bit subtractor for signal <GND_1_o_GND_1_o_sub_138_OUT> created at line 316.
-    Found 8-bit adder for signal <_n0494> created at line 311.
-    Found 8-bit comparator equal for signal <current_y[7]_length[7]_equal_130_o> created at line 306
-    Found 32-bit comparator equal for signal <GND_1_o_GND_1_o_equal_139_o> created at line 316
-    Found 8-bit comparator lessequal for signal <n0175> created at line 329
-    Found 8-bit comparator lessequal for signal <n0177> created at line 329
-    Found 8-bit comparator lessequal for signal <n0180> created at line 329
-    Found 8-bit comparator lessequal for signal <n0183> created at line 329
-    Found 8-bit comparator lessequal for signal <n0186> created at line 329
-    Found 8-bit comparator lessequal for signal <n0189> created at line 329
-    Found 8-bit comparator lessequal for signal <n0192> created at line 329
-    Found 8-bit comparator lessequal for signal <n0197> created at line 334
-    Found 8-bit comparator lessequal for signal <n0199> created at line 334
-    Found 8-bit comparator lessequal for signal <n0202> created at line 334
-    Found 8-bit comparator lessequal for signal <n0205> created at line 334
-    Found 8-bit comparator lessequal for signal <n0208> created at line 334
-    Found 8-bit comparator lessequal for signal <n0211> created at line 334
-    Found 8-bit comparator lessequal for signal <n0214> created at line 334
-    Found 8-bit comparator lessequal for signal <n0219> created at line 339
-    Found 8-bit comparator lessequal for signal <n0221> created at line 339
-    Found 8-bit comparator lessequal for signal <n0224> created at line 339
-    Found 8-bit comparator lessequal for signal <n0227> created at line 339
-    Found 8-bit comparator lessequal for signal <n0230> created at line 339
-    Found 8-bit comparator lessequal for signal <n0233> created at line 339
-    Found 8-bit comparator lessequal for signal <n0236> created at line 339
-    Found 8-bit comparator lessequal for signal <n0241> created at line 344
-    Found 8-bit comparator lessequal for signal <n0243> created at line 344
-    Found 8-bit comparator lessequal for signal <n0246> created at line 344
-    Found 8-bit comparator lessequal for signal <n0249> created at line 344
-    Found 8-bit comparator lessequal for signal <n0252> created at line 344
-    Found 8-bit comparator lessequal for signal <n0255> created at line 344
-    Found 8-bit comparator lessequal for signal <n0258> created at line 344
-    Found 8-bit comparator lessequal for signal <n0263> created at line 349
-    Found 8-bit comparator lessequal for signal <n0265> created at line 349
-    Found 8-bit comparator lessequal for signal <n0268> created at line 349
-    Found 8-bit comparator lessequal for signal <n0272> created at line 349
-    Found 8-bit comparator lessequal for signal <n0275> created at line 349
-    Found 8-bit comparator lessequal for signal <n0278> created at line 349
-    Found 8-bit comparator lessequal for signal <n0283> created at line 354
-    Found 8-bit comparator lessequal for signal <n0285> created at line 354
-    Found 8-bit comparator lessequal for signal <n0288> created at line 354
-    Found 8-bit comparator lessequal for signal <n0292> created at line 354
-    Found 8-bit comparator lessequal for signal <n0295> created at line 354
-    Found 8-bit comparator lessequal for signal <n0298> created at line 354
-    Found 8-bit comparator lessequal for signal <n0303> created at line 359
-    Found 8-bit comparator lessequal for signal <n0305> created at line 359
-    Found 8-bit comparator lessequal for signal <n0308> created at line 359
-    Found 8-bit comparator lessequal for signal <n0312> created at line 359
-    Found 8-bit comparator lessequal for signal <n0315> created at line 359
-    Found 8-bit comparator lessequal for signal <n0318> created at line 359
-    Found 8-bit comparator lessequal for signal <n0323> created at line 365
-    Found 8-bit comparator lessequal for signal <n0325> created at line 365
-    Found 8-bit comparator lessequal for signal <n0328> created at line 365
-    Found 8-bit comparator lessequal for signal <n0332> created at line 365
-    Found 8-bit comparator lessequal for signal <n0335> created at line 365
-    Found 8-bit comparator lessequal for signal <n0338> created at line 365
-    Found 8-bit comparator equal for signal <GND_1_o_GND_1_o_equal_134_o> created at line 311
-    Found 8-bit comparator equal for signal <GND_1_o_GND_1_o_equal_143_o> created at line 321
+    Found 8-bit subtractor for signal <GND_1_o_GND_1_o_sub_149_OUT> created at line 325.
+    Found 8-bit adder for signal <_n0587> created at line 320.
+    Found 8-bit comparator equal for signal <current_y[7]_length[7]_equal_141_o> created at line 315
+    Found 32-bit comparator equal for signal <GND_1_o_GND_1_o_equal_150_o> created at line 325
+    Found 8-bit comparator lessequal for signal <n0186> created at line 340
+    Found 8-bit comparator lessequal for signal <n0188> created at line 340
+    Found 8-bit comparator lessequal for signal <n0191> created at line 340
+    Found 8-bit comparator lessequal for signal <n0194> created at line 340
+    Found 8-bit comparator lessequal for signal <n0197> created at line 340
+    Found 8-bit comparator lessequal for signal <n0200> created at line 340
+    Found 8-bit comparator lessequal for signal <n0203> created at line 340
+    Found 8-bit comparator lessequal for signal <n0208> created at line 345
+    Found 8-bit comparator lessequal for signal <n0210> created at line 345
+    Found 8-bit comparator lessequal for signal <n0213> created at line 345
+    Found 8-bit comparator lessequal for signal <n0216> created at line 345
+    Found 8-bit comparator lessequal for signal <n0219> created at line 345
+    Found 8-bit comparator lessequal for signal <n0222> created at line 345
+    Found 8-bit comparator lessequal for signal <n0225> created at line 345
+    Found 8-bit comparator lessequal for signal <n0230> created at line 350
+    Found 8-bit comparator lessequal for signal <n0232> created at line 350
+    Found 8-bit comparator lessequal for signal <n0235> created at line 350
+    Found 8-bit comparator lessequal for signal <n0238> created at line 350
+    Found 8-bit comparator lessequal for signal <n0241> created at line 350
+    Found 8-bit comparator lessequal for signal <n0244> created at line 350
+    Found 8-bit comparator lessequal for signal <n0247> created at line 350
+    Found 8-bit comparator lessequal for signal <n0252> created at line 355
+    Found 8-bit comparator lessequal for signal <n0254> created at line 355
+    Found 8-bit comparator lessequal for signal <n0257> created at line 355
+    Found 8-bit comparator lessequal for signal <n0260> created at line 355
+    Found 8-bit comparator lessequal for signal <n0263> created at line 355
+    Found 8-bit comparator lessequal for signal <n0266> created at line 355
+    Found 8-bit comparator lessequal for signal <n0269> created at line 355
+    Found 8-bit comparator lessequal for signal <n0273> created at line 360
+    Found 8-bit comparator lessequal for signal <n0275> created at line 360
+    Found 8-bit comparator lessequal for signal <n0278> created at line 360
+    Found 8-bit comparator lessequal for signal <n0281> created at line 360
+    Found 8-bit comparator lessequal for signal <n0284> created at line 360
+    Found 8-bit comparator lessequal for signal <n0287> created at line 360
+    Found 8-bit comparator lessequal for signal <n0290> created at line 360
+    Found 8-bit comparator lessequal for signal <n0295> created at line 365
+    Found 8-bit comparator lessequal for signal <n0297> created at line 365
+    Found 8-bit comparator lessequal for signal <n0300> created at line 365
+    Found 8-bit comparator lessequal for signal <n0303> created at line 365
+    Found 8-bit comparator lessequal for signal <n0306> created at line 365
+    Found 8-bit comparator lessequal for signal <n0309> created at line 365
+    Found 8-bit comparator lessequal for signal <n0312> created at line 365
+    Found 8-bit comparator lessequal for signal <n0317> created at line 370
+    Found 8-bit comparator lessequal for signal <n0319> created at line 370
+    Found 8-bit comparator lessequal for signal <n0322> created at line 370
+    Found 8-bit comparator lessequal for signal <n0325> created at line 370
+    Found 8-bit comparator lessequal for signal <n0328> created at line 370
+    Found 8-bit comparator lessequal for signal <n0331> created at line 370
+    Found 8-bit comparator lessequal for signal <n0334> created at line 370
+    Found 8-bit comparator lessequal for signal <n0339> created at line 375
+    Found 8-bit comparator lessequal for signal <n0341> created at line 375
+    Found 8-bit comparator lessequal for signal <n0344> created at line 375
+    Found 8-bit comparator lessequal for signal <n0347> created at line 375
+    Found 8-bit comparator lessequal for signal <n0350> created at line 375
+    Found 8-bit comparator lessequal for signal <n0353> created at line 375
+    Found 8-bit comparator lessequal for signal <n0356> created at line 375
+    Found 8-bit comparator equal for signal <GND_1_o_GND_1_o_equal_145_o> created at line 320
+    Found 8-bit comparator equal for signal <GND_1_o_GND_1_o_equal_154_o> created at line 330
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred 124 D-type flip-flop(s).
-	inferred  56 Comparator(s).
-	inferred  27 Multiplexer(s).
+	inferred  60 Comparator(s).
+	inferred  50 Multiplexer(s).
 Unit <FSM> synthesized.
 
 =========================================================================
@@ -232,14 +236,14 @@ Macro Statistics
  3-bit register                                        : 1
  5-bit register                                        : 1
  8-bit register                                        : 12
-# Comparators                                          : 56
+# Comparators                                          : 60
  32-bit comparator equal                               : 1
  8-bit comparator equal                                : 3
- 8-bit comparator lessequal                            : 52
-# Multiplexers                                         : 27
- 1-bit 2-to-1 multiplexer                              : 7
- 3-bit 2-to-1 multiplexer                              : 8
- 5-bit 2-to-1 multiplexer                              : 12
+ 8-bit comparator lessequal                            : 56
+# Multiplexers                                         : 50
+ 1-bit 2-to-1 multiplexer                              : 17
+ 3-bit 2-to-1 multiplexer                              : 20
+ 5-bit 2-to-1 multiplexer                              : 13
 
 =========================================================================
 
@@ -259,14 +263,14 @@ Macro Statistics
  8-bit subtractor                                      : 1
 # Registers                                            : 123
  Flip-Flops                                            : 123
-# Comparators                                          : 56
+# Comparators                                          : 60
  32-bit comparator equal                               : 1
  8-bit comparator equal                                : 3
- 8-bit comparator lessequal                            : 52
-# Multiplexers                                         : 27
- 1-bit 2-to-1 multiplexer                              : 7
- 3-bit 2-to-1 multiplexer                              : 8
- 5-bit 2-to-1 multiplexer                              : 12
+ 8-bit comparator lessequal                            : 56
+# Multiplexers                                         : 50
+ 1-bit 2-to-1 multiplexer                              : 17
+ 3-bit 2-to-1 multiplexer                              : 20
+ 5-bit 2-to-1 multiplexer                              : 13
 
 =========================================================================
 
@@ -279,59 +283,45 @@ Optimizing unit <FSM> ...
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block FSM, actual ratio is 8.
-FlipFlop bestvala_5 has been replicated 1 time(s)
-INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvala_5 connected to a primary input has been replicated
-FlipFlop bestvala_6 has been replicated 2 time(s)
-INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvala_6 connected to a primary input has been replicated
-FlipFlop bestvala_7 has been replicated 3 time(s)
+FlipFlop bestvala_7 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvala_7 connected to a primary input has been replicated
-FlipFlop bestvalb_3 has been replicated 1 time(s)
-INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalb_3 connected to a primary input has been replicated
-FlipFlop bestvalb_4 has been replicated 1 time(s)
-INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalb_4 connected to a primary input has been replicated
-FlipFlop bestvalb_5 has been replicated 2 time(s)
+FlipFlop bestvalb_5 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalb_5 connected to a primary input has been replicated
-FlipFlop bestvalb_6 has been replicated 1 time(s)
+FlipFlop bestvalb_6 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalb_6 connected to a primary input has been replicated
 FlipFlop bestvalb_7 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalb_7 connected to a primary input has been replicated
-FlipFlop bestvalc_5 has been replicated 1 time(s)
-INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalc_5 connected to a primary input has been replicated
-FlipFlop bestvalc_7 has been replicated 2 time(s)
+FlipFlop bestvalc_3 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalc_3 connected to a primary input has been replicated
+FlipFlop bestvalc_4 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalc_4 connected to a primary input has been replicated
+FlipFlop bestvalc_7 has been replicated 3 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalc_7 connected to a primary input has been replicated
 FlipFlop bestvald_5 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvald_5 connected to a primary input has been replicated
 FlipFlop bestvald_6 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvald_6 connected to a primary input has been replicated
-FlipFlop bestvald_7 has been replicated 3 time(s)
+FlipFlop bestvald_7 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvald_7 connected to a primary input has been replicated
-FlipFlop bestvale_3 has been replicated 1 time(s)
-INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvale_3 connected to a primary input has been replicated
-FlipFlop bestvale_4 has been replicated 1 time(s)
-INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvale_4 connected to a primary input has been replicated
-FlipFlop bestvale_5 has been replicated 1 time(s)
+FlipFlop bestvale_5 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvale_5 connected to a primary input has been replicated
 FlipFlop bestvale_6 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvale_6 connected to a primary input has been replicated
-FlipFlop bestvale_7 has been replicated 3 time(s)
+FlipFlop bestvale_7 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvale_7 connected to a primary input has been replicated
-FlipFlop bestvalf_5 has been replicated 2 time(s)
-INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalf_5 connected to a primary input has been replicated
-FlipFlop bestvalf_6 has been replicated 2 time(s)
+FlipFlop bestvalf_6 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalf_6 connected to a primary input has been replicated
-FlipFlop bestvalf_7 has been replicated 4 time(s)
+FlipFlop bestvalf_7 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalf_7 connected to a primary input has been replicated
 FlipFlop bestvalg_5 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalg_5 connected to a primary input has been replicated
-FlipFlop bestvalg_6 has been replicated 3 time(s)
+FlipFlop bestvalg_6 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalg_6 connected to a primary input has been replicated
-FlipFlop bestvalg_7 has been replicated 3 time(s)
+FlipFlop bestvalg_7 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalg_7 connected to a primary input has been replicated
-FlipFlop bestvalh_5 has been replicated 3 time(s)
+FlipFlop bestvalh_5 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalh_5 connected to a primary input has been replicated
-FlipFlop bestvalh_6 has been replicated 3 time(s)
-INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalh_6 connected to a primary input has been replicated
-FlipFlop bestvalh_7 has been replicated 3 time(s)
+FlipFlop bestvalh_7 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop bestvalh_7 connected to a primary input has been replicated
 
 Final Macro Processing ...
@@ -340,8 +330,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 177
- Flip-Flops                                            : 177
+# Registers                                            : 155
+ Flip-Flops                                            : 155
 
 =========================================================================
 
@@ -364,17 +354,18 @@ Top Level Output File Name         : FSM.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 524
-#      LUT2                        : 7
-#      LUT3                        : 9
-#      LUT4                        : 85
-#      LUT5                        : 90
-#      LUT6                        : 310
-#      MUXF7                       : 23
-# FlipFlops/Latches                : 177
-#      FDE                         : 160
-#      FDR                         : 5
-#      FDRE                        : 12
+# BELS                             : 532
+#      LUT2                        : 1
+#      LUT3                        : 4
+#      LUT4                        : 64
+#      LUT5                        : 73
+#      LUT6                        : 353
+#      MUXF7                       : 37
+# FlipFlops/Latches                : 155
+#      FD                          : 3
+#      FDE                         : 41
+#      FDR                         : 2
+#      FDRE                        : 109
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 98
@@ -388,16 +379,16 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             177  out of  11440     1%  
- Number of Slice LUTs:                  501  out of   5720     8%  
-    Number used as Logic:               501  out of   5720     8%  
+ Number of Slice Registers:             155  out of  11440     1%  
+ Number of Slice LUTs:                  495  out of   5720     8%  
+    Number used as Logic:               495  out of   5720     8%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    646
-   Number with an unused Flip Flop:     469  out of    646    72%  
-   Number with an unused LUT:           145  out of    646    22%  
-   Number of fully used LUT-FF pairs:    32  out of    646     4%  
-   Number of unique control sets:        23
+ Number of LUT Flip Flop pairs used:    623
+   Number with an unused Flip Flop:     468  out of    623    75%  
+   Number with an unused LUT:           128  out of    623    20%  
+   Number of fully used LUT-FF pairs:    27  out of    623     4%  
+   Number of unique control sets:        31
 
 IO Utilization: 
  Number of IOs:                         100
@@ -427,7 +418,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 177   |
+clk                                | BUFGP                  | 155   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -438,9 +429,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 8.074ns (Maximum Frequency: 123.860MHz)
-   Minimum input arrival time before clock: 5.878ns
-   Maximum output required time after clock: 5.656ns
+   Minimum period: 8.135ns (Maximum Frequency: 122.933MHz)
+   Minimum input arrival time before clock: 6.621ns
+   Maximum output required time after clock: 5.725ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -449,74 +440,74 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 8.074ns (frequency: 123.860MHz)
-  Total number of paths / destination ports: 22149 / 199
+  Clock period: 8.135ns (frequency: 122.933MHz)
+  Total number of paths / destination ports: 27732 / 271
 -------------------------------------------------------------------------
-Delay:               8.074ns (Levels of Logic = 7)
-  Source:            bestvala_3 (FF)
-  Destination:       my_move (FF)
+Delay:               8.135ns (Levels of Logic = 7)
+  Source:            bestvalg_4 (FF)
+  Destination:       direction_2 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: bestvala_3 to my_move
+  Data Path: bestvalg_4 to direction_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             24   0.447   1.277  bestvala_3 (bestvala_3)
-     LUT4:I2->O            4   0.203   1.028  bestvala[7]_bestvalh[7]_LessThan_204_o1_SW1 (N25)
-     LUT5:I0->O            1   0.203   0.808  _n055032 (_n055032)
-     LUT6:I3->O            1   0.205   0.808  _n055033 (_n055033)
-     LUT4:I1->O            4   0.205   0.912  _n0550311 (_n05503)
-     LUT6:I3->O            1   0.205   0.684  Mmux_my_move_my_movea_MUX_63_o33_SW0 (N226)
-     LUT6:I4->O            1   0.203   0.580  Mmux_my_move_my_movea_MUX_63_o34 (my_move_my_movea_MUX_63_o)
-     LUT3:I2->O            1   0.205   0.000  my_move_dpot (my_move_dpot)
-     FDE:D                     0.102          my_move
+     FDRE:C->Q            26   0.447   1.454  bestvalg_4 (bestvalg_4)
+     LUT4:I0->O            3   0.203   0.755  bestvale[7]_bestvalg[7]_LessThan_199_o1_SW1 (N107)
+     LUT5:I3->O            1   0.203   0.808  SF1101 (SF110)
+     LUT6:I3->O            2   0.205   0.845  bestvala[7]_no_perm_e_r_AND_59_o6 (bestvala[7]_no_perm_e_r_AND_59_o6)
+     LUT4:I1->O            8   0.205   0.803  bestvala[7]_no_perm_e_r_AND_59_o11 (bestvala[7]_no_perm_e_r_AND_59_o)
+     LUT4:I3->O            1   0.205   0.684  Mmux_direction[2]_direction[2]_mux_297_OUT82 (Mmux_direction[2]_direction[2]_mux_297_OUT81)
+     LUT5:I3->O            1   0.203   0.808  Mmux_direction[2]_direction[2]_mux_297_OUT84 (direction[2]_direction[2]_mux_297_OUT<2>)
+     LUT5:I2->O            1   0.205   0.000  direction_2_rstpot (direction_2_rstpot)
+     FD:D                      0.102          direction_2
     ----------------------------------------
-    Total                      8.074ns (1.978ns logic, 6.096ns route)
-                                       (24.5% logic, 75.5% route)
+    Total                      8.135ns (1.978ns logic, 6.157ns route)
+                                       (24.3% logic, 75.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 428 / 354
+  Total number of paths / destination ports: 641 / 407
 -------------------------------------------------------------------------
-Offset:              5.878ns (Levels of Logic = 5)
-  Source:            finish_mem_reader (PAD)
-  Destination:       state_1 (FF)
+Offset:              6.621ns (Levels of Logic = 5)
+  Source:            finish_a (PAD)
+  Destination:       state_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: finish_mem_reader to state_1
+  Data Path: finish_a to state_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  finish_mem_reader_IBUF (finish_mem_reader_IBUF)
-     LUT5:I0->O            4   0.203   1.028  GND_1_o_finish_mem_reader_AND_26_o1 (GND_1_o_finish_mem_reader_AND_26_o)
-     LUT6:I1->O            1   0.203   0.944  Mmux_state[4]_GND_1_o_mux_51_OUT21 (Mmux_state[4]_GND_1_o_mux_51_OUT2)
-     LUT6:I0->O            1   0.203   0.808  Mmux_state[4]_GND_1_o_mux_51_OUT23 (Mmux_state[4]_GND_1_o_mux_51_OUT22)
-     LUT5:I2->O            1   0.205   0.000  Mmux_state[4]_GND_1_o_mux_51_OUT24 (state[4]_GND_1_o_mux_51_OUT<1>)
-     FDRE:D                    0.102          state_1
+     IBUF:I->O            28   1.222   1.339  finish_a_IBUF (finish_a_IBUF)
+     LUT6:I4->O            5   0.203   1.079  GND_1_o_finish_a_AND_19_o1 (GND_1_o_finish_a_AND_19_o)
+     LUT6:I0->O            1   0.203   0.580  _n0862_inv11 (_n0862_inv11)
+     LUT5:I4->O            1   0.205   0.580  _n0862_inv14_SW0 (N400)
+     LUT6:I5->O            4   0.205   0.683  _n0862_inv14 (_n0862_inv1)
+     FDRE:CE                   0.322          state_0
     ----------------------------------------
-    Total                      5.878ns (2.138ns logic, 3.741ns route)
-                                       (36.4% logic, 63.6% route)
+    Total                      6.621ns (2.360ns logic, 4.261ns route)
+                                       (35.6% logic, 64.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 79 / 49
 -------------------------------------------------------------------------
-Offset:              5.656ns (Levels of Logic = 2)
-  Source:            state_1 (FF)
-  Destination:       comp_d (PAD)
+Offset:              5.725ns (Levels of Logic = 2)
+  Source:            state_3 (FF)
+  Destination:       comp_g (PAD)
   Source Clock:      clk rising
 
-  Data Path: state_1 to comp_d
+  Data Path: state_3 to comp_g
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            47   0.447   1.752  state_1 (state_1)
-     LUT4:I0->O            4   0.203   0.683  GND_1_o_finish_a_AND_18_o11 (comp_d_OBUF)
-     OBUF:I->O                 2.571          comp_d_OBUF (comp_d)
+     FDRE:C->Q            54   0.447   1.821  state_3 (state_3)
+     LUT4:I0->O            4   0.203   0.683  comp_g<4>1 (comp_g_OBUF)
+     OBUF:I->O                 2.571          comp_g_OBUF (comp_g)
     ----------------------------------------
-    Total                      5.656ns (3.221ns logic, 2.435ns route)
-                                       (56.9% logic, 43.1% route)
+    Total                      5.725ns (3.221ns logic, 2.504ns route)
+                                       (56.3% logic, 43.7% route)
 
 =========================================================================
 
@@ -528,14 +519,14 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    8.074|         |         |         |
+clk            |    8.135|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.38 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.36 secs
  
 --> 
 
@@ -543,5 +534,5 @@ Total memory usage is 298756 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    3 (   0 filtered)
-Number of infos    :   27 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
 

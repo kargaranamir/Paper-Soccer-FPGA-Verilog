@@ -34,6 +34,7 @@ module MP(
 //	input data_valid,
 //	output enable,
 	output [15:0] address,
+	output flag,
 	output my_move
 	//output color_o/////////////////////
 	//output [7:0] data_out12
@@ -85,6 +86,7 @@ FSM FSM1 (
     .comp_f(comp_f), //
     .comp_g(comp_g), //
     .comp_h(comp_h), //
+	 .flag(flag),/////////////////////////////
     .my_move(my_move)//
     );
 	 

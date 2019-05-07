@@ -14,16 +14,16 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\async_transmitter.v" Line 37: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 50: Assignment to <arg fmt="%s" index="1">RxD_endofpacket</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 51: Assignment to <arg fmt="%s" index="1">RxD_endofpacket</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 51: Assignment to <arg fmt="%s" index="1">RxD_idle</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 52: Assignment to <arg fmt="%s" index="1">RxD_idle</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 68: Assignment to <arg fmt="%s" index="1">blue</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 69: Assignment to <arg fmt="%s" index="1">blue</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 69: Assignment to <arg fmt="%s" index="1">color_valid</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 70: Assignment to <arg fmt="%s" index="1">color_valid</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Handout.v" Line 102: Assignment to <arg fmt="%s" index="1">direction</arg> ignored, since the identifier is never used
@@ -299,94 +299,85 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\mem_reader.v" Line 514: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v" Line 163: Assignment to <arg fmt="%s" index="1">enable</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v" Line 165: Assignment to <arg fmt="%s" index="1">enable</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 59: Assignment to <arg fmt="%s" index="1">color_o</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 294: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 325: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 298: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 299: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 303: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 308: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 309: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 314: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 318: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 319: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 323: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 328: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 329: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 330: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 417: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 334: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 422: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 339: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 423: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 340: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 427: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 345: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 432: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 349: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 433: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 350: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 438: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 354: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 442: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 359: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 443: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 360: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 447: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 448: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 452: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 453: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 454: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 458: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 463: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 464: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 469: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 473: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 474: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 478: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 483: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 484: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="872" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\Score.v" Line 80: Using initial value of <arg fmt="%s" index="1">x_score</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 657: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\A_azimuth.v" Line 658: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v" Line 133: Net &lt;<arg fmt="%s" index="1">data_valid</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v" Line 135: Net &lt;<arg fmt="%s" index="1">data_valid</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\fifo.v" Line 40: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
@@ -401,31 +392,31 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\fifo.v" Line 85: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 168: Assignment to <arg fmt="%s" index="1">buf_full</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 170: Assignment to <arg fmt="%s" index="1">buf_full</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 169: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">fifo_counter</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 171: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">fifo_counter</arg>&gt;. Formal port size is <arg fmt="%d" index="2">4</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 169: Assignment to <arg fmt="%s" index="1">fifo_counter</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v" Line 171: Assignment to <arg fmt="%s" index="1">fifo_counter</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">40</arg>: Output port &lt;<arg fmt="%s" index="3">RxD_endofpacket</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">41</arg>: Output port &lt;<arg fmt="%s" index="3">RxD_endofpacket</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">40</arg>: Output port &lt;<arg fmt="%s" index="3">RxD_idle</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">41</arg>: Output port &lt;<arg fmt="%s" index="3">RxD_idle</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">blue</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">I1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">blue</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">I1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">color_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">I1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">color_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">I1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">160</arg>: Output port &lt;<arg fmt="%s" index="3">fifo_counter</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ff1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">fifo_counter</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ff1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">160</arg>: Output port &lt;<arg fmt="%s" index="3">buf_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ff1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\TOP.v</arg>&quot; line <arg fmt="%s" index="2">162</arg>: Output port &lt;<arg fmt="%s" index="3">buf_full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ff1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">length_in&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -434,7 +425,7 @@
 <msg type="warning" file="Xst" num="3035" delta="old" >Index value(s) does not match array range for signal &lt;<arg fmt="%s" index="1">mem</arg>&gt;, simulation mismatch.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v</arg>&quot; line <arg fmt="%s" index="2">127</arg>: Output port &lt;<arg fmt="%s" index="3">enable</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">M1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\you can find any information about courses here\my courses\fpga competition\ISE_directory\TOP_v2\top_v2\MP.v</arg>&quot; line <arg fmt="%s" index="2">129</arg>: Output port &lt;<arg fmt="%s" index="3">enable</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">M1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">data_valid</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -444,9 +435,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">data_valid</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">data_out7</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">old_x</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -755,6 +743,9 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">mp1/A1/anloc_x_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">mp1/FSM1/bestvalh_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TOP</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;mp1/FSM1/bestvalh_6&gt; </arg>
 </msg>
 
 </messages>

@@ -5,8 +5,7 @@ NET "RxD" LOC = P105;
 
 
 # PlanAhead Generated physical constraints 
-
-#NET "flag" LOC = P132;
+NET "flag" LOC = P132;
 #NET "color_in" LOC = P131;
 #NET "data_out12[0]" LOC = P132;
 #NET "data_out12[1]" LOC = P131;
@@ -24,3 +23,6 @@ NET "RxD" LOC = P105;
 #NET "current_y[5]" LOC = P123;
 #NET "current_y[6]" LOC = P121;
 #NET "current_y[7]" LOC = P120;
+#Created by Constraints Editor (xc6slx9-tqg144-3) - 2017/11/22
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 40 ns HIGH 50%;

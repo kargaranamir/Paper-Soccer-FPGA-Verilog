@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Nov 27 20:29:12 2018
+# Process ID: 5904
+# Log file: E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/planAhead_run_4/planAhead.log
+# Journal file: E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {E:/you can find any information about courses here/my courses/fpga competition/ISE_directory/TOP_v2/top_v2/pa.fromNcd.tcl}
